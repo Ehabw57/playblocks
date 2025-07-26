@@ -1,0 +1,436 @@
+[
+  {
+    "id": 1,
+    "title": "Elden Ring",
+    "image": "https://cdn.mobygames.com/covers/10371758-elden-ring-xbox-one-front-cover.jpg",
+    "description": "An open-world action RPG set in a fantasy realm created by Hidetaka Miyazaki and George R.R. Martin.",
+    "category": [
+      "Action",
+      "RPG",
+      "Adventure"
+    ],
+    "developer": "FromSoftware",
+    "platform": [
+      "PC",
+      "PS5",
+      "xbox"
+    ],
+    "release_date": "2022-02-25",
+    "rating": 9.5,
+    "price": 59.99
+  },
+  {
+    "id": 2,
+    "title": "Genshin Impact",
+    "image": "https://cdn.mobygames.com/covers/9213927-genshin-impact-playstation-4-front-cover.jpg",
+    "description": "",
+    "category": [
+      "RGP",
+      "Adventure",
+    ],
+    "developer": "miHoYo",
+    "platform": [
+      "PC",
+      "PS5"
+    ],
+    "release_date": "2020-09-27",
+    "rating": 7.4,
+    "price": 30.00
+  },
+  {
+    "id": 3,
+    "title": "Hollow Knight",
+    "image": "https://cdn.mobygames.com/covers/2209343-hollow-knight-playstation-4-front-cover.png",
+    "description": "Explore a vast ruined kingdom of insects and heroes in this challenging Metroidvania.",
+    "category": [
+      "Indie",
+      "Action",
+      "Platformer"
+    ],
+    "developer": "Team Cherry",
+    "platform": [
+      "PC",
+      "Switch",
+      "PS4",
+      "xbox"
+    ],
+    "release_date": "2017-02-24",
+    "rating": 9.0,
+    "price": 14.99
+  },
+  {
+    "id": 4,
+    "title": "Persona 5",
+    "image": "https://cdn.mobygames.com/covers/10095055-persona-5-playstation-3-front-cover.png",
+    "description": "Inside a casino, during one of their heists, the group known as Phantom Thieves of Hearts is cornered by the police. Unable to escape, the leader of the group (the game's protagonist) is put under arrest, and goes into interrogation. Thus he begins to tell his story. After defending a woman from being harassed by a powerful politician, the 16-year-old protagonist is charged with assault and put on probation, which results in expulsion from his school.",
+    "category": ["RPG"],
+    "developer": "Atlus",
+    "platforms": ["PC","PS4"],
+    "release_date": "2016-09-15",
+    "rating": 6.3,
+    "price": 39.99
+  },
+  {
+    "id": 5,
+    "title": "The Witcher 3: Wild Hunt",
+    "image": "https://cdn.mobygames.com/covers/1261683-the-witcher-3-wild-hunt-windows-extras.jpg",
+    "description": "A story-driven RPG with deep narrative and expansive world.",
+    "category": [
+      "RPG",
+      "Adventure"
+    ],
+    "developer": "CD Projekt Red",
+    "platform": [
+      "PC",
+      "PS4",
+      "xbox",
+      "Switch"
+    ],
+    "release_date": "2015-05-18",
+    "rating": 9.7,
+    "price": 39.99
+  },
+  {
+    "id": 6,
+    "title": "Stardew Valley",
+    "image": "https://cdn.mobygames.com/covers/1725611-stardew-valley-xbox-one-front-cover.png",
+    "description": "A relaxing farming simulation game with charming characters and endless activities.",
+    "category": [
+      "Simulation",
+      "RPG",
+      "Indie"
+    ],
+    "developer": "ConcernedApe",
+    "platform": [
+      "PC",
+      "Switch",
+      "PS4",
+      "xbox",
+      "Mobile"
+    ],
+    "release_date": "2016-02-26",
+    "rating": 8.9,
+    "price": 14.99
+  },
+  {
+    "id": 7,
+    "title": "Cyberpunk 2077",
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7497.jpg",
+    "description": "An open-world sci-fi RPG set in a dystopian future city.",
+    "category": [
+      "RPG",
+      "Action"
+    ],
+    "developer": "CD Projekt Red",
+    "platform": [
+      "PC",
+      "PS4",
+      "PS5",
+      "xbox"
+    ],
+    "release_date": "2020-12-10",
+    "rating": 8.0,
+    "price": 49.99
+  },
+  {
+    "id": 8,
+    "title": "Overwatch 2",
+    "image": "https://cdn.mobygames.com/covers/11037275-overwatch-2-xbox-one-front-cover.png",
+    "description": "A team-based multiplayer shooter with unique heroes and fast-paced gameplay.",
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "developer": "Blizzard Entertainment",
+    "platform": [
+      "PC",
+      "PS5",
+      "xbox",
+      "Switch"
+    ],
+    "release_date": "2022-10-04",
+    "rating": 7.8,
+    "price": 0.0 
+  },
+  {
+    "id": 9,
+    "title": "Resident Evil 4 Remake",
+    "image": "https://cdn.mobygames.com/covers/16963643-resident-evil-4-xbox-series-front-cover.png",
+    "description": "A modern reimagining of the classic survival horror masterpiece.",
+    "category": [
+      "Horror",
+      "Action"
+    ],
+    "developer": "Capcom",
+    "platform": [
+      "PC",
+      "PS5",
+      "xbox"
+    ],
+    "release_date": "2023-03-24",
+    "rating": 9.3,
+    "price": 59.99
+  },
+  {
+    "id": 10,
+    "title": "Fortnite",
+    "image": "https://m.media-amazon.com/images/M/MV5BNWJmZThhMzktZjI4NC00OTdmLThmMjItNTcxNDdjNjU0YmM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "description": "A battle royale game with building mechanics and regular seasonal updates.",
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "developer": "Epic Games",
+    "platform": [
+      "PC",
+      "PS4",
+      "PS5",
+      "xbox",
+      "Switch",
+      "Mobile"
+    ],
+    "release_date": "2017-07-21",
+    "rating": 8.4,
+    "price": 0.0
+  },
+   {
+      "id": 11,
+      "title": "Fall Guys",
+      "image": "https://cdn.mobygames.com/covers/11256120-fall-guys-ultimate-knockout-xbox-one-front-cover.jpg",
+      "description": "Multiplayer party game where players compete in obstacle courses until one remains.",
+      "catorogy": ["Party", "Battle Royale"],
+      "developer": "Mediatonic",
+      "platforme": ["PC", "PS5", "Xbox", "Nintendo"],
+      "release_date": "2020-08-04",
+      "rating": 4.2,
+      "price": 0.00
+    },
+    {
+      "id": 12,
+      "title": "FIFA 20",
+      "image": "https://cdn.mobygames.com/covers/10894798-fifa-20-xbox-one-front-cover.jpg",
+      "description": "Realistic football simulation with updated teams and leagues.",
+      "catorogy": ["Sports"],
+      "developer": "EA Sports",
+      "platforme": ["PC", "PS5", "Xbox"],
+      "release_date": "2020-09-29",
+      "rating": 4.5,
+      "price": 69.99
+    },
+    {
+      "id": 13,
+      "title": "Call of Duty: Warzone",
+      "image": "https://cdn.mobygames.com/covers/3227605-call-of-duty-warzone-xbox-one-front-cover.jpg",
+      "description": "Free-to-play battle royale experience in the Call of Duty universe.",
+      "catorogy": ["Shooter", "Battle Royale"],
+      "developer": "Infinity Ward",
+      "platforme": ["PC", "PS5", "Xbox"],
+      "release_date": "2020-03-10",
+      "rating": 4.4,
+      "price": 0.00
+    },
+    {
+      "id": 14,
+      "title": "Minecraft",
+      "image": "https://cdn.mobygames.com/covers/3741959-minecraft-windows-apps-front-cover.jpg",
+      "description": "Open-world sandbox game focused on building and survival.",
+      "catorogy": ["Sandbox", "Survival"],
+      "developer": "Mojang",
+      "platforme": ["PC", "PS5", "Xbox", "Nintendo", "Mobile"],
+      "release_date": "2011-11-18",
+      "rating": 4.8,
+      "price": 26.95
+    },
+    {
+      "id": 15,
+      "title": "Among Us",
+      "image": "https://cdn.mobygames.com/covers/9424872-among-us-windows-front-cover.jpg",
+      "description": "Social deduction game where crewmates try to identify impostors.",
+      "catorogy": ["Social", "Party"],
+      "developer": "Innersloth",
+      "platforme": ["PC", "Mobile", "Nintendo Switch"],
+      "release_date": "2018-06-15",
+      "rating": 4.1,
+      "price": 5.00
+    },
+    {
+      "id": 16,
+      "title": "Apex Legends",
+      "image": " https://cdn.mobygames.com/covers/7478493-apex-legends-xbox-one-front-cover.jpg ",
+      "description": "Hero-based battle royale shooter with unique abilities.",
+      "catorogy": ["Shooter", "Battle Royale"],
+      "developer": "Respawn Entertainment",
+      "platforme": ["PC", "PS5", "Xbox", "Nintendo"],
+      "release_date": "2019-02-04",
+      "rating": 4.3,
+      "price": 0.00
+    },
+    {
+      "id": 17,
+      "title": "Rocket League",
+      "image": "https://cdn.mobygames.com/covers/9721437-rocket-league-xbox-one-front-cover.jpg",
+      "description": "High-powered soccer with rocket-powered cars.",
+      "catorogy": ["Sports", "Action"],
+      "developer": "Psyonix",
+      "platforme": ["PC", "PS5", "Xbox", "Nintendo"],
+      "release_date": "2015-07-07",
+      "rating": 4.6,
+      "price": 0.00
+    },
+  {
+    "id": 18,
+    "title": "Cuphead",
+    "image": "https://cdn.mobygames.com/covers/1122773-cuphead-windows-apps-front-cover.jpg",
+    "description": "A classic run and gun action game heavily focused on boss battles, with a hand-drawn 1930s cartoon style.",
+    "category": ["Platformer", "Indie", "Action"],
+    "developer": "Studio MDHR",
+    "platform": ["PC", "Xbox", "Nintendo", "PS4"],
+    "release_date": "2017-09-29",
+    "rating": 9.0,
+    "price": 19.99
+  },
+  {
+    "id": 19,
+    "title": "It Takes Two",
+    "image": "https://cdn.mobygames.com/covers/5918747-it-takes-two-windows-front-cover.jpg",
+    "description": "A cooperative action-adventure game where two players must work together to mend a broken relationship.",
+    "category": ["Co-op", "Puzzle", "Adventure"],
+    "developer": "Hazelight Studios",
+    "platform": ["PC", "PS4", "PS5", "xbox"],
+    "release_date": "2021-03-26",
+    "rating": 9.3,
+    "price": 39.99
+  },
+  {
+    "id": 20,
+    "title": "Ghostrunner",
+    "image": "https://cdn.mobygames.com/covers/9368697-ghostrunner-nintendo-switch-front-cover.jpg",
+    "description": "A fast-paced first-person slasher set in a dystopian cyberpunk world with one-hit kills and parkour mechanics.",
+    "category": ["Action", "Cyberpunk", "Parkour"],
+    "developer": "One More Level",
+    "platform": ["PC", "PS4", "PS5", "xbox", "Nintendo Switch"],
+    "release_date": "2020-10-27",
+    "rating": 8.3,
+    "price": 29.99
+  },
+  {
+    "id": 21,
+    "title": "The Legend of Zelda",
+    "image": "https://cdn.mobygames.com/covers/8437180-the-legend-of-zelda-breath-of-the-wild-nintendo-switch-front-cov.jpg",
+    "description": "Explore a vast open world as Link in this critically acclaimed action-adventure set in the kingdom of Hyrule.",
+    "category": ["Adventure", "Open World", "Action"],
+    "developer": "Nintendo",
+    "platform": ["Nintendo", "PC"],
+    "release_date": "2017-03-03",
+    "rating": 9.9,
+    "price": 59.99
+  },
+  {
+    "id": 22,
+    "title": "Red Dead Redemption 2",
+    "image": "https://cdn.mobygames.com/covers/18319416-red-dead-redemption-ii-xbox-one-front-cover.jpg",
+    "description": "An open-world Western action-adventure game following John Marston’s journey to track down his former gang members.",
+    "category": ["Action", "Adventure", "Western"],
+    "developer": "Rockstar Games",
+    "platform": ["PS3", "xbox", "Nintendo", "PS4"],
+    "release_date": "2010-05-18",
+    "rating": 9.5,
+    "price": 29.99
+  },
+  {
+    "id": 23,
+    "title": "Portal 2",
+    "image": "https://cdn.mobygames.com/covers/6318866-portal-2-windows-front-cover.jpg",
+    "description": "Solve mind-bending physics puzzles in a hilarious and thrilling story-driven first-person puzzle game.",
+    "category": ["Puzzle", "Sci-Fi", "Co-op"],
+    "developer": "Valve",
+    "platform": ["PC", "PS3", "xbox"],
+    "release_date": "2011-04-19",
+    "rating": 9.4,
+    "price": 9.99
+  },
+  {
+    "id": 24,
+    "title": "Super Mario Odyssey",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg",
+    "description": "Join Mario on a globe-trotting 3D platform adventure with his new companion, Cappy.",
+    "category": ["Platformer", "Adventure", "Family"],
+    "developer": "Nintendo",
+    "platform": ["Nintendo"],
+    "release_date": "2017-10-27",
+    "rating": 9.7,
+    "price": 59.99
+  },
+  {
+    "id": 25,
+    "title": "Solo Leveling: ARISE",
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6qhn.webp",
+    "description": "Based on the hit webtoon, play as Sung Jin-Woo and rise as the strongest hunter in this stylish action RPG.",
+    "category": ["Action", "RPG", "Anime"],
+    "developer": "Netmarble",
+    "platform": ["PC", "mobile"],
+    "release_date": "2024-05-08",
+    "rating": 8.1,
+    "price": 0.00
+  },
+  {
+    "id": 26,
+    "title": "Smash Legends",
+    "image": "https://kappa.vgmsite.com/soundtracks/smash-legends-android-ios-windows-gamerip-2021/banner.jpg",
+    "description": "A fast-paced 3D brawler with fairytale-themed characters and chaotic multiplayer combat.",
+    "category": ["Action", "Brawler", "Multiplayer"],
+    "developer": "5minlab",
+    "platform": ["PC", "mobile"],
+    "release_date": "2021-04-13",
+    "rating": 7.9,
+    "price": 0.00
+  },
+  {
+    "id": 27,
+    "title": "The Last of Us",
+    "image": "https://www.bluedogposters.com.au/cdn/shop/products/01-1508_l-the-last-of-us-large-regular-posters_1400x.jpg?v=1589944953",
+    "description": "A post-apocalyptic action-adventure game centered on the bond between Joel and Ellie as they fight to survive.",
+    "category": ["Action", "Adventure", "Story-rich"],
+    "developer": "Naughty Dog",
+    "platform": ["PS3", "PS4", "PS5", "PC"],
+    "release_date": "2013-06-14",
+    "rating": 9.8,
+    "price": 39.99
+  },
+  {
+    "id": 28,
+    "title": "Mass Effect 2",
+    "image": "https://cdn.mobygames.com/covers/3431995-mass-effect-2-windows-manual.jpg",
+    "description": "A sci-fi RPG where you play Commander Shepard in a galaxy-spanning war against a powerful ancient race.",
+    "category": ["RPG", "Sci-Fi", "Story-rich"],
+    "developer": "BioWare",
+    "platform": ["PC", "xbox", "PS3"],
+    "release_date": "2007-11-20",
+    "rating": 9.0,
+    "price": 19.99
+  },
+  {
+    "id": 29,
+    "title": "Ghost of Tsushima",
+    "image": "https://cdn.mobygames.com/covers/11280846-ghost-of-tsushima-playstation-4-front-cover.jpg",
+    "description": "Fight as a lone samurai defending Tsushima Island during the Mongol invasion in this open-world action epic.",
+    "category": ["Action", "Adventure", "Open World"],
+    "developer": "Sucker Punch Productions",
+    "platform": ["PS4", "PS3", "PC"],
+    "release_date": "2020-07-17",
+    "rating": 9.3,
+    "price": 49.99
+  },
+  {
+    "id": 30,
+    "title": "Control",
+    "image": "https://cdn.mobygames.com/covers/7904334-control-xbox-one-front-cover.jpg",
+    "description": "A supernatural third-person shooter where you explore a shifting government building filled with mystery.",
+    "category": ["Action", "Shooter", "Sci-Fi"],
+    "developer": "Remedy Entertainment",
+    "platform": ["PC", "PS4", "PS5", "xbox"], 
+    "release_date": "2019-08-27",
+    "rating": 8.6,
+    "price": 29.99
+  }
+]
