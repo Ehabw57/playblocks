@@ -14,20 +14,20 @@
     <form>
 
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" onblur="handelUserName(event)" required>
         <br><br>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
         <br><br>
 
-        <button type="button">Show Password</button>
+        <button type="button" onclick="togglePassword()">Show Password</button>
         <br><br>
 
         <a href="#">forget password?</a>
         <br><br>
 
-        <button type="button" id="login-btn" onclick="loginCheck()">Login</button>
+        <button type="button" id="login-btn" onclick="loginCheck(event)" disabled>Login</button>
         <br><br>
 
         <small>Don't have an account?</small>
