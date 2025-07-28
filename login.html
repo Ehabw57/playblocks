@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>LOGIN</title>
+  <meta charset="UTF-8">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="stylesheets/login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 </head>
-
 <body>
 
-    <h1>LOGIN</h1>
+  <h1>LOGIN</h1>
+  <h3>LOGIN AND START YOUR GAMING JOURNEY RIGHT NOW</h3>
 
-    <h3>LOGIN AND START YOUR GAMING JOURNEY RIGHT NOW</h3>
+  <form action="#">
+    <div class="input-container">
+      <i class="fa-solid fa-user"></i>
+      <label for="username"></label>
+      <input type="text" id="username" name="username" placeholder="Username" required>
+    </div>
 
-    <form>
+    <div class="input-container">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <i class="fa-regular fa-eye" id="togglePassword"></i>
+    </div>
 
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br><br>
+    <a href="#" id="forget">Forget password?</a>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <br><br>
+    <button type="button" id="login-btn" onclick="loginCheck()">LOGIN</button>
 
-        <button type="button">Show Password</button>
-        <br><br>
+    <br><br><br>
+    <small>Don't have an account?</small>
+    <br>
+    <a href="#" id="register">REGISTER</a>
+  </form>
 
-        <a href="#">forget password?</a>
-        <br><br>
-
-        <button type="button" id="login-btn" onclick="loginCheck()">Login</button>
-        <br><br>
-
-        <small>Don't have an account?</small>
-        <br>
-
-        <a href="#">REGISTER</a>
-        <script src="scripts/login.js"></script>
-    </form>
-
+  <script src="scripts/login.js"></script>
 </body>
-
 </html>

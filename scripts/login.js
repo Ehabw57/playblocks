@@ -1,39 +1,37 @@
-function loginCheck() {
-    var loginBtn = document.getElementById("login-btn");
-    loginBtn.disabled = true;
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const loginBtn = document.getElementById("login-btn");
+const togglePasswordIcon = document.getElementById("togglePassword");
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+function togglePassword() {
+  const isPassword = password.type === "password";
+  password.type = isPassword ? "text" : "password";
 
-    var usersData = localStorage.getItem("users");
-    var users = usersData ? JSON.parse(usersData) : [];
-
-    var user = users.find( function matchUser(user) { return user.username === username; });
-
-    if (!user) {
-        alert(username + " user is not registered yet");
-        loginBtn.disabled = false;
-        return;
-    }
-
-    if (user.password !== password) {
-        alert("Sorry, wrong password");
-        loginBtn.disabled = false;
-        return;
-    }
-
-    sessionStorage.setItem("sessionID", user.userID);
-
-    alert("Login successful!");
-    loginBtn.disabled = false;
+  togglePasswordIcon.classList.toggle("fa-eye");
+  togglePasswordIcon.classList.toggle("fa-eye-slash");
 }
 
-if (!localStorage.getItem("users")) {
-    var findUsers = [
-        { username: "rehab", userID: "u1", password: "1234" },
-        { username: "ahmed", userID: "u2", password: "abcd" },
-        { username: "ali", userID: "u3", password: "abc1" },
-        { username: "sara", userID: "u4", password: "ab12" }
-    ];
-    localStorage.setItem("users", JSON.stringify(findUsers));
+togglePasswordIcon.addEventListener("click", togglePassword);
+
+function loginCheck() {
+  loginBtn.disabled = true;
+
+  const usersData = localStorage.getItem("users");
+  const users = usersData ? JSON.parse(usersData) : [];
+
+  const user = users.find(user => user.username === username.value);
+
+  if (user) {
+    if (user.password === password.value) {
+      sessionStorage.setItem("userSession", JSON.stringify(user));
+      alert("Login successful!");
+      console.log(sessionStorage.getItem('userSession'));
+    } else {
+      alert("Sorry, wrong password");
+    }
+  } else {
+    alert(username.value + " user is not registered yet");
+  }
+
+  loginBtn.disabled = false;
 }
