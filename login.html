@@ -15,7 +15,7 @@
     <div class="input-container">
       <i class="fa-solid fa-user"></i>
       <label for="username"></label>
-      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="text" id="username" name="username" placeholder="Username" onblur="handelUserName(event)" required>
     </div>
 
     <div class="input-container">
@@ -26,8 +26,6 @@
 
 
     <a href="#" id="forget">Forget password?</a>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" onblur="handelUserName(event)" required>
         <br><br>
 
     <button type="button" id="login-btn" onclick="loginCheck()">LOGIN</button>
@@ -36,22 +34,6 @@
     <br>
     <a href="#" id="register">REGISTER</a>
   </form>
-        <button type="button" onclick="togglePassword()">Show Password</button>
-        <br><br>
-
-        <a href="#">forget password?</a>
-        <br><br>
-
-        <button type="button" id="login-btn" onclick="loginCheck(event)" disabled>Login</button>
-        <br><br>
-
-        <small>Don't have an account?</small>
-        <br>
-
-        <a href="#">REGISTER</a>
-        <script src="scripts/login.js"></script>
-    </form>
-
   <script src="scripts/login.js"></script>
 </body>
 </html>
