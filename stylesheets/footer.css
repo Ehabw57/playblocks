@@ -1,0 +1,66 @@
+/* the headers of each footer container */
+footer .contianer h4 {
+	font-size: 30px;
+	margin: 30px 20px;
+}
+
+/*footer containers*/
+footer .contianer{
+	float: left;
+	width: 30%;
+	height: 400px;
+	margin-inline: 1.5%;
+}
+
+/*footer lists*/
+footer ul, footer ul li{
+	margin-top: 15px;
+	margin-left: 0;
+	padding: 0;
+}
+
+
+/*Developers links*/
+footer .contianer a{
+	font-size: 20px;
+	font-weight: lighter;
+	text-decoration: none;
+	margin-left: 25px;
+}
+
+/*socail media icons*/
+footer .contianer span {
+	font-size: 50px;
+	margin-top: 30px;
+}
+
+/*information icons*/
+footer .contianer address span {
+	font-size: 23px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+/*under footer logo paragraph*/
+footer .contianer p {
+	width: 60%;
+	margin-left: 30px;
+}
+
+footer #footer-logo {
+	background-image: url('../assets/logo_vert.png');
+	width: 50%;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+footer small {
+	text-align: center;
+	display: block;
+	font-size: 15px;
+}
+
+.clear {
+	clear: both;
+}
