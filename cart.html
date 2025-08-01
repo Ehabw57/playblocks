@@ -4,191 +4,65 @@
   <meta charset="UTF-8">
   <title>Shopping Cart</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 30px;
-      background-color: #0b001a;
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    h1 {
-      font-size: 48px;
-      text-align: center;
-      margin-bottom: 30px;
-      color: #ffffff;
-      text-shadow: 0 0 10px #7f5af0;
-    }
-    .cart-container {
-      overflow: hidden;
-      margin-bottom: 30px;
-    }
-    section {
-      width: 65%;
-      display: inline-block;
-      vertical-align: top;
-    }
-    aside {
-      width: 27%;
-      float: right;
-      border: 2px solid #7f5af0;
-      border-radius: 12px;
-      background-color: #16052a;
-      padding: 30px;
-      box-shadow: 0 0 15px #7f5af0aa;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 18px;
-      background-color: #1a0933;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    th, td {
-      padding: 15px;
-      text-align: left;
-      vertical-align: middle;
-      border-bottom: 1px solid #333;
-    }
-    th {
-      font-size: 20px;
-      background-color: #221144;
-    }
-    td img {
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
-    }
-    aside h2 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 30px;
-      text-shadow: 0 0 8px #7f5af0;
-    }
-    .totals p {
-      margin: 20px 0;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    button {
-      width: 100%;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      color: white;
-      background-color: #7f5af0;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #7f5af0;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background-color: #9d7bff;
-    }
-    .back {
-      margin-bottom: 20px;
-    }
-    .back a {
-      font-size: 18px;
-      color: #aaa;
-      text-decoration: none;
-    }
-    .back a:hover {
-      color: #fff;
-    }
-    .remove-btn {
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="./stylesheets/cart.css">
+  <link rel='stylesheet' href='stylesheets/nav.css'>
+  <script src='./scripts/global_functions.js'></script>
 </head>
 <body>
+	<script src='./scripts/handel_redirect.js'></script>
 
-<div class="back">
-  <a href="#"><i class="fa-solid fa-arrow-left"></i> Back to shopping</a>
-</div>
+	<nav>
+		<div class="containerFloat-left">
+			<div class="logo-Horizantal">
+				<a href="#"> </a> 
+			</div>
+			<input type='text' placeholder="search"  />
+			<i class="search fa-solid fa-magnifying-glass"></i>
+		</div>
 
-<h1>Shopping Cart</h1>
+		<div class="containerFloat-right">
+			<i onclick="window.open('./cart.html', '_self')" class="fa-solid fa-cart-shopping"></i>
+			<span id="cart-count">0</span>
 
-<div class="cart-container">
-  <section>
-    <table id="cart-table">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Product Image</th>
-          <th>Product Title</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Products will be inserted here dynamically -->
-      </tbody>
-    </table>
-  </section>
+			<button onclick='logout()' class="out">logout</button>
+		</div>
+	</nav>
+	 
+	<div class="back">
+		<a href="home.html"><i class="fa-solid fa-arrow-left"></i> Back to shopping</a>
+	</div>
 
-  <aside>
-    <h2>Summary</h2>
-    <div class="totals">
-      <p id="total-items">Products: 0</p>
-      <p id="total-price">Total: $0.00</p>
-    </div>
-    <button>Proceed to Checkout</button>
-  </aside>
-</div>
 
-<script>
-  let cartProducts = [];
+	<h1>Shopping Cart</h1>
 
-  function renderCart() {
-    const cartTableBody = document.querySelector("#cart-table tbody");
-    const totalItems = document.getElementById("total-items");
-    const totalPrice = document.getElementById("total-price");
+	<div class="cart-container">
+		<section>
+			<table id="cart-table">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Product Image</th>
+						<th>Product Title</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Products will be inserted here dynamically -->
+				</tbody>
+			</table>
+		</section>
 
-    cartTableBody.innerHTML = "";
-    let total = 0;
+		<aside>
+			<h2>Summary</h2>
+			<div class="totals">
+				<p id="total-items">Products: 0</p>
+				<p id="total-price">Total: $0.00</p>
+			</div>
+			<button>Proceed to Checkout</button>
+		</aside>
+	</div>
 
-    cartProducts.forEach((product, index) => {
-      total += product.price;
-
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td><span class="remove-btn" onclick="removeItem(${index})">X</span></td>
-        <td><img src="${product.image}" alt="${product.title}" width="80" height="110"></td>
-        <td>${product.title}</td>
-        <td>$${product.price.toFixed(2)}</td>
-      `;
-      cartTableBody.appendChild(row);
-    });
-
-    totalItems.textContent = `Products: ${cartProducts.length}`;
-    totalPrice.textContent = `Total: $${total.toFixed(2)}`;
-  }
-
-  function removeItem(index) {
-    cartProducts.splice(index, 1);
-    renderCart();
-  }
-
-  async function fetchProducts() {
-    try {
-      const response = await fetch("games.json");
-      const data = await response.json();
-      cartProducts = data.map(game => ({
-        title: game.title,
-        image: game.image,
-        price: game.price
-      }));
-      renderCart();
-    } catch (error) {
-      console.error("Error loading games.json:", error);
-    }
-  }
-
-  fetchProducts();
-</script>
+	<script src='./scripts/cart.js'></script>
 
 </body>
 </html>
