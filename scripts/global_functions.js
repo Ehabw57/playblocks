@@ -27,6 +27,12 @@ function updateCartCount() {
 	cartCount.innerText = currentUser.cart.length;
 }
 
+function addToUserCart(product) {
+	const currentUser = getCurrentUser();
+	currentUser.cart.push(product)
+	updateUserCart(currentUser.cart);
+}
+
 function updateUserCart(newCart) {
 	const currentUser = getCurrentUser();
 	currentUser.cart = newCart;
@@ -35,5 +41,10 @@ function updateUserCart(newCart) {
 	let index = users.findIndex(user => user.userName == currentUser.userName);
 	users[index].cart = newCart
 	parseUsersData(users)
+	updateCartCount();
 }
 
+function isProductOnCart(id) {
+	const currentUser = getCurrentUser()
+	return currentUser.cart.some((p) => p.id == id)
+}

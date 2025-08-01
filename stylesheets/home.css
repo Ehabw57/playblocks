@@ -1,3 +1,7 @@
+body {
+
+	font-family: Arial, sans-serif;
+}
 #currentUser {
 	color: cyan;
 	font-weight: 300;

@@ -5,7 +5,6 @@ const totalPrice = document.getElementById("total-price");
 function removeItem(index) {
 	cartProducts.splice(index, 1);
 	updateUserCart(cartProducts);
-	updateCartCount()
 	renderCart();
 }
  
