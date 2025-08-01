@@ -3,6 +3,7 @@ const password = document.getElementById("password");
 const loginBtn = document.getElementById("login-btn");
 const togglePasswordIcon = document.getElementById("togglePassword");
 
+
 function handelUserName(event) {
 	loginBtn.disabled = event.target.value === '' ? true : false
 }
@@ -20,16 +21,13 @@ togglePasswordIcon.addEventListener("click", togglePassword);
 function loginCheck() {
   loginBtn.disabled = true;
 
-  const usersData = localStorage.getItem("users");
-  const users = usersData ? JSON.parse(usersData) : [];
-
-  const user = users.find(user => user.username === username.value);
+  const users = getUsersData()
+  const user = users ? users.find(user => user.userName === username.value) : ''
 
   if (user) {
     if (user.password === password.value) {
-      sessionStorage.setItem("userSession", JSON.stringify(user));
-      alert("Login successful!");
-      console.log(sessionStorage.getItem('userSession'));
+		sessionStorage.setItem("currentUser", JSON.stringify(user));
+		window.open('../home.html', '_self');
     } else {
       alert("Sorry, wrong password");
     }

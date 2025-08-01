@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>LOGIN</title>
+  <title>Login</title>
   <link rel="stylesheet" href="stylesheets/login.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <script src='./scripts/global_functions.js'></script>
 </head>
+
 <body>
+	<script src='./scripts/handel_redirect.js'></script>
+	<h1>LOGIN</h1>
+	<h3>LOGIN AND START YOUR GAMING JOURNEY RIGHT NOW</h3>
 
-  <h1>LOGIN</h1>
-  <h3>LOGIN AND START YOUR GAMING JOURNEY RIGHT NOW</h3>
-
-  <form action="#">
-    <div class="input-container">
-      <i class="fa-solid fa-user"></i>
-      <label for="username"></label>
+	<form action="#">
+	<div class="input-container">
+	<i class="fa-solid fa-user"></i>
+	<label for="username"></label>
       <input type="text" id="username" name="username" placeholder="Username" onblur="handelUserName(event)" required>
     </div>
 
@@ -32,7 +35,7 @@
     <br><br><br>
     <small>Don't have an account?</small>
     <br>
-    <a href="#" id="register">REGISTER</a>
+    <a href="./registration.html" id="register">REGISTER</a>
   </form>
   <script src="scripts/login.js"></script>
 </body>

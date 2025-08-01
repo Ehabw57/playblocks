@@ -1,0 +1,26 @@
+ 
+    header {
+      background: url('../assets/hero.jpg') no-repeat center center/cover;
+      height: 93vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    header h1 .highlight {
+      color: #79CFFF;
+    }
+
+    header p {
+      font-size: 23px;
+      max-width: 600px;
+      color: #ccc;
+      margin-top: 20px;
+    }

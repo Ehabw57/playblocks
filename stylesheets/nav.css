@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 55px;
+    background-color: #000000;
+	color: white;
+   
+}
+
+
+
+.containerFloat-left{
+    float: left;
+    display: inline;
+}
+.logo-Horizantal{
+	height: 50px;
+	width: 100px;
+    display: inline;
+    float: left;
+	background-image: url(../assets/logo_vert.png);
+	background-position: center;
+	background-size: cover;
+}
+
+input{
+    all: unset;
+    border: 2px solid transparent;
+    margin-top: 17px;
+    width: 367px;
+    height: 20px;
+    background-color: rgb(177, 179, 178);
+    border-radius: 20px;
+    margin-left: 30px;
+    padding-left: 8px   ;
+    color: rgb(23, 24, 24);
+}
+
+input:focus{
+    border-color: #aa00ff;
+}
+
+input::placeholder{
+    color: rgb(59, 60, 61);
+    font-size: 1rem;
+}
+
+.search{
+    cursor: pointer;
+	margin-left: 10px;
+}
+
+.containerFloat-right{
+	margin-top: 15px;
+	vertical-align: middle;
+    float: right;
+}
+
+
+i {
+	font-size: 20px;
+	vertical-align: middle;
+}
+#cart-count {
+  position: absolute;
+  top: 3px;
+  right: 120px;
+  background: #00aaff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+.out{
+    width: 90px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    float: right;
+    margin-inline: 19px;
+    cursor: pointer;
+}
+
+.out:hover{
+background-color: rgb(68, 214, 129);
+transition: .5s;
+
+}
