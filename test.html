@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Section</title>
+  <style>
+    body {
+      background-color: #0b001a;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-top: 50px;
+      color: #ccc;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card-container {
+      display: inline-block;
+      background-color: #1a1a2e;
+      border: 1px solid #333;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      position: relative;
+      width: 250px;
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image-container img {
+      width: 250px;
+      height: 360px;
+      background-size: cover;
+    }
+
+    .rating {
+      background-image: url(assets/star.png);
+      background-position: center;
+      background-size: cover;
+      font-weight: bolder;
+      text-align: center;
+      line-height: 48px;
+      color: black;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .card-container button {
+      border-radius: 7px;
+      padding: 3px 10px;
+      border: none;
+      margin-right: 4px;
+    }
+
+    .catogory {
+      font-size: 12px;
+      color: white;
+    }
+
+    .red { background-color: darkred; }
+    .blue { background-color: darkblue; }
+    .green { background-color: darkgreen; }
+    .gray { background-color: gray; }
+
+    .title {
+    font-size: 17px;         
+    margin: 10px 0 5px 0;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis; 
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-align: right;
+      margin: 0;
+    }
+
+    .free-price {
+      color: red;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .add-to-cart {
+      background-color: #4caf50;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .add-to-cart:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Game Store</h1>
+
+  <script src="test.js"> </script>
+</body>
+</html>
