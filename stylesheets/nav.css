@@ -63,6 +63,7 @@ input::placeholder{
 i {
 	font-size: 20px;
 	vertical-align: middle;
+    cursor: pointer;
 }
 #cart-count {
   position: absolute;

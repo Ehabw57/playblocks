@@ -34,3 +34,12 @@ function renderCart() {
 
 renderCart();
 updateCartCount();
+document.getElementById("checkout-btn").addEventListener("click", () => {
+  const user = getCurrentUser();
+  if (!user || !user.cart || user.cart.length === 0) {
+    alert(" Your cart is empty. Add some products first.");
+  } else {
+    alert(`Thank you, ${user.userName}! Proceeding to checkout.`);
+   
+  }
+});
