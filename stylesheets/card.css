@@ -1,91 +1,113 @@
-/*this selector will be removed later*/
-body {
-  background-color: #0b001a;
-  font-family: Arial, sans-serif;
-  color: white;
-  padding: 50px;
+main {
+	padding: 28px;
+	background-color: #3a3a4e;
+}
+main h2 {
+	margin: 60px 0px 20px;
+	font-size: 35px;
+	font-weight: bolder;
+	color: #ccc;
 }
 
-/*the card root parent*/
+.section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
 .card-container {
-  display: inline-block;
-  background-color: #1a1a2e;
-  border: 1px solid #333;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  position: relative;
+	display: inline-block;
+	background-color: #1a1a2e;
+	border: 1px solid #333;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	position: relative;
+	width: fit-content
 }
 
-/*made relative so we can place the rating where we want*/
 .image-container {
-  position: relative;
+	position: relative;
+	width: 305px;
+	height: 415px;
+	background-size: cover;
+	background-position: center;
+
 }
 
-/* the image it self*/
-.image-container img {
-  width: 350px;
-  height: 500px;
-}
-
-/*the rating star*/
 .rating {
-  background-image: url(../assets/star.png);
-  background-position: center;
-  background-size: cover;
-  font-weight: bolder;
-  text-align: center;
-  line-height: 72px;
-  color: black;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+	background-image: url(../assets/star.png);
+	background-position: center;
+	background-size: cover;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 62px;
+	color: black;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
 }
 
-
-.card-container button{
-  border-radius: 7px;
-  padding: 3px 10px;
-  border: none;
-}
 
 .catogory {
-  text-align: left;
-  font-size: 14px;
-  color: #bbb7b7;
-  margin-top: 15px;
-  margin-inline: 3px;
-
+	cursor: pointer;
+	padding: 1px 9px;
+	border: none;
+	margin-right: 4px;
+	margin-top: 12px;
+	font-size: 16px;
+	color: white;
 }
 
 .title {
-  font-size: 30px;
-  margin: 0;
-  margin-top: 12px;
-  color: white;
-  text-transform: uppercase;
+	font-size: 22px;         
+	margin: 10px 0 5px 0;
+	color: white;
+	text-transform: uppercase;
+	white-space: nowrap;    
+	overflow: hidden;       
+	text-overflow: ellipsis; 
 }
 
 .price {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  margin-bottom: 10px;
-  text-align: right;
-
-}
-.blue {
-  color: lightblue;
-  background-color: darkblue;
-}
-.green {
-  color: lightgreen;
-  background-color: darkgreen;
+	font-size: 19px;
+	font-weight: bold;
+	color: white;
+	text-align: right;
+	margin: 0;
 }
 
-.red {
-  color: lightred;
-  background-color: darkred;
+.free-price {
+	color: red;
+	font-weight: bold;
+}
+
+.card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	margin-top: 14px;
+}
+
+.add-to-cart {
+	background-color: red;
+	color: white;
+	display: inline-block;
+	padding: 7px 12px;
+	font-weight: bold;
+	border: none;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.add-to-cart:disabled {
+	background-color: gray;
+	color: darkgray;
+	cursor: not-allowed;
+}
+
+
+.add-to-cart:hover {
+	background-color: #45a049;
 }

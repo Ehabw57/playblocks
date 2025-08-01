@@ -7,7 +7,9 @@ nav{
     height: 55px;
     background-color: #000000;
 	color: white;
-   
+	position: fixed;
+	width:100%;
+	z-index: 1;
 }
 
 
