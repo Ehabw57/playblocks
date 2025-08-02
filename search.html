@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Search</title>
+		<link rel="stylesheet" href="stylesheets/search.css">
+		<link rel="stylesheet" href="stylesheets/nav.css">
+		<link rel="stylesheet" href="stylesheets/card.css">
+		<script src='./scripts/global_functions.js'></script>
+	</head>
+	<body>
+		<script src='./scripts/handel_redirect.js'></script>
+
+		<nav>
+			<div class="containerFloat-left">
+				<div class="logo-Horizantal">
+					<a href="./home.html"></a> 
+				</div>
+				<input type='text' placeholder="search"  />
+				<i class="search fa-solid fa-magnifying-glass"></i>
+			</div>
+
+			<div class="containerFloat-right">
+				<i onclick="window.open('./cart.html', '_self')" class="fa-solid fa-cart-shopping"></i>
+				<span id="cart-count">0</span>
+
+				<button onclick='logout()' class="out">logout</button>
+			</div>
+		</nav>
+
+		<aside>
+			<section id="categoryFilter">
+			<h2>categories</h2>
+			</section>
+
+
+			<section id="platformFilter">
+			<h2>platforms</h2>
+			</section>
+
+			<h2>price</h2>
+			<input type="number" name="price" id="priceFrom" placeholder="$">
+			<br>
+			<input type="number" name="price" id="priceTo" placeholder="$">
+			<button onclick="applyFilters()">Apply Filters</button>
+			<button onclick="clearFilters()">clearFilters</button>
+		</aside>
+
+		<main>
+			<input onblur="filterBySearch()"type="text" id="search" />
+			<button>search-icon</button>
+			<section id="searchRoot"></section>
+		</main>
+
+		<script src='./scripts/search.js'></script>
+	</body>
+</html>
