@@ -60,8 +60,8 @@ function applyFilters() {
 	if (activeFilters) {
 		games =  filterdGames.filter((game) => {
 			return activeFilters.every((filter) => {
-				const key = filter.parentElement.name;
-				const value = filter.parentElement.innerText;
+				const key = filter.nextSibling.name;
+				const value = filter.nextSibling.innerText;
 				if (game[key].includes(value)) 
 					return true 
 			})
@@ -83,14 +83,18 @@ function createFitlers(parent, filterName) {
 	set.forEach((i) => {
 		const input = document.createElement('input')
 		input.type = 'checkbox'
+		input.id = i
 
 		const label = document.createElement('label')
 		label.innerText = i
 		label.name = filterName;
-		label.style.display = 'inline-block';
+		label.setAttribute('for', i)
 
-		label.appendChild(input)
+		const br = document.createElement('br')
+		
+		parent.appendChild(input)
 		parent.appendChild(label)
+		parent.appendChild(br)
 	})
 }
 

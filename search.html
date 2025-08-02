@@ -5,9 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Search</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-		<link rel="stylesheet" href="stylesheets/search.css">
 		<link rel="stylesheet" href="stylesheets/nav.css">
 		<link rel="stylesheet" href="stylesheets/card.css">
+		<link rel="stylesheet" href="stylesheets/search.css">
 		<script src='./scripts/global_functions.js'></script>
 	</head>
 	<body>
@@ -41,16 +41,18 @@
 			</section>
 
 			<h2>price</h2>
+			<div class='price-container'>
 			<input type="number" name="price" id="priceFrom" placeholder="$">
-			<br>
+			<span>:</span>
 			<input type="number" name="price" id="priceTo" placeholder="$">
+			</div>
 			<button onclick="applyFilters()">Apply Filters</button>
-			<button onclick="clearFilters()">clearFilters</button>
+			<button onclick="clearFilters()">Clear Filters</button>
 		</aside>
 
 		<main>
 			<input onblur="filterBySearch()"type="text" id="search" />
-			<button>search-icon</button>
+			<i class="search fa-solid fa-magnifying-glass search-icon"></i>
 			<section id="searchRoot"></section>
 		</main>
 

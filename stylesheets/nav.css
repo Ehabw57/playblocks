@@ -28,7 +28,7 @@ nav{
 	background-size: cover;
 }
 
-input{
+nav input{
     all: unset;
     border: 2px solid transparent;
     margin-top: 17px;
