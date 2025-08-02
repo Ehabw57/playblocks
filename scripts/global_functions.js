@@ -31,9 +31,15 @@ const allPlatforms = [
   'mobile'
 ]
 
+
 function logout() {
 	sessionStorage.removeItem('currentUser')
 	window.open('../login.html', '_self')
+}
+
+function search() {
+  const searchInput = document.getElementById('searchInput')
+  window.open(`./search.html?q=${searchInput.value}`, '_self')
 }
 
 function getUsersData() {
