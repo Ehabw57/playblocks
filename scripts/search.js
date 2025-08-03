@@ -9,7 +9,7 @@ createFitlers(platformFilter, 'platform')
 createFitlers(categoryFilter, 'category')
 const filters = document.querySelectorAll('input[type="checkbox"]');
 
-searchInput.value = location.search.split('=')[1] || '';
+searchInput.value = decodeURI(location.search.split('=')[1]).trim() || '';
 
 let filterdGames = []
 filterBySearch()
@@ -45,7 +45,7 @@ function clearFilters() {
 }
 
 function filterBySearch() {
-	const games = data.filter((game) => game.title.toLowerCase().includes(searchInput.value.toLowerCase()))
+	const games = data.filter((game) => game.title.toLowerCase().includes(searchInput.value.toLowerCase().trim()))
 	filterdGames = games;
 	applyFilters();
 }
