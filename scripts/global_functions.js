@@ -828,7 +828,7 @@ data = [
   {
     "id": 33,
     "title": "PUBG: BATTLEGROUNDS",
-    "image": "assets\Pubg.jpg",
+    "image": "assets/Pubg.jpg",
     "cover": "https://media.rawg.io/media/games/1bd/1bd2657b81eb0c99338120ad444b24ff.jpg",
     "description": "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
     "platform": [
