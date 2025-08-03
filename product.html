@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Product Page</title>
+  <link rel="stylesheet" href="./stylesheets/card.css">
+  <link rel="stylesheet" href="./stylesheets/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="scripts/global_functions.js"></script>
+</head>
+
+<body>
+  <script src='./scripts/handel_redirect.js'></script>
+  <header>
+    <img id='cover' src="./assets/RocketLeague.jpg" alt="Rocket League" />
+  </header>
+
+  <div class="container">
+    <h1 id="title">ROCKET LEAGUE</h1>
+
+    <div class="stars">
+		<span>★★★★★</span>
+		<span id='rate'>4.6</span>
+    </div>
+
+	<div id='metaData'></div>
+
+    <p id='desc' class="description">
+      Players take on the role of a mysterious vigilante, exploring a neon-lit metropolis...
+    </p>
+
+    <div class="price-cart">
+      <button class="btn">ADD TO CART</button>
+      <div id="price" class="price">$29.00</div>
+    </div>
+
+    <div class="related-products">
+      <h2>RELATED PRODUCTS</h2>
+      <div id='relatedProducts' class="product-list">
+      </div>
+    </div>
+
+  <script src="scripts/product.js"></script>
+
+</body>
+
+</html>
