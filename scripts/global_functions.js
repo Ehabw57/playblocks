@@ -89,6 +89,30 @@ function isProductOnCart(id) {
 	return currentUser.cart.some((p) => p.id == id)
 }
 
+// function createGameCover(game) {
+// 	const gameCover = document.createElement('div');
+// 	gameCover.className = 'game-cover';
+
+
+// 	const cover = document.createElement('div');
+// 	cover.className = 'cover-container';
+
+// 	const coverUrl = game.cover ? game.cover : './assets/notfound.png';
+// 	cover.style.backgroundImage = `url("${coverUrl}")`;
+
+
+// 	const title = document.createElement('h2');
+// 	title.textContent = game.title;
+// 	title.className = 'game-title';
+
+
+// 	gameCover.appendChild(cover);
+// 	gameCover.appendChild(title);
+
+// 	return gameCover;
+// }
+
+
 
 // function createGameCover(game) {
 // 	const gameCover = document.createElement('div');
@@ -110,20 +134,21 @@ function isProductOnCart(id) {
 // 	return gameCover;
 // }
 
-// function createGameCover(game) {
-// 	const cover = document.createElement('div')
-// 	cover.className = 'cover-container'
-// 	cover.style.backgroundImage = 'url("${coverUrl}")'
+function createGameCover(game) {
+	const cover = document.createElement('div')
+	cover.className = 'cover-container'
+    const coverUrl = game.cover;
+	cover.style.backgroundImage = `url("${coverUrl}")`;
 
-// 	const categoryBtns = game.category.map(cat => {
-// 		const color = CATEGORY_COLORS[cat].color || 'gray';
-// 		const bgColor = CATEGORY_COLORS[cat].background || 'black';
-// 		return `<button class="catogory" style="color: ${color}; background-color: ${bgColor};">${cat}</button>`;
-// 	}).join('');
+	const categoryBtns = game.category.map(cat => {
+		const color = CATEGORY_COLORS[cat].color || 'gray';
+		const bgColor = CATEGORY_COLORS[cat].background || 'black';
+		return `<button class="catogory" style="color: ${color}; background-color: ${bgColor};">${cat}</button>`;
+	}).join('');
 
-// 	cover.innerHTML = `${categoryBtns} <h2>${game.title}</h2>`
-// 	return cover
-// }
+	cover.innerHTML = `${categoryBtns} <h2>${game.title}</h2>`
+	return cover
+}
 
 function createGameCard(game) {
 	const card = document.createElement('div');
@@ -767,5 +792,69 @@ data = [
     "release_date": "2019-08-27",
     "rating": 8.6,
     "price": 29.99
+  },
+    {
+    "id": 31,
+    "title": "Tarisland",
+    "image": "assets/Tarisland.jpg",
+    "cover": "https://media.rawg.io/media/screenshots/961/961c11b296449593202e601951f80d2b.jpg",
+    "description": "A cross-platform MMORPG developed by Level Infinite and Published by Tencent.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action"
+    ],
+    "price": "5.66",
+    "rating": 6.3
+  },
+  {
+    "id": 32,
+    "title": "Predecessor",
+    "image": "assets/Predecessor.jpg",
+    "cover": "https://media.rawg.io/media/screenshots/6a0/6a0117d2dba5284ff13d0d08bf57beed.jpg",
+    "description": "A free-to-play MOBA shooter developed and published by Omeda Studios.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action"
+    ],
+    "price": "58.70",
+    "rating": 7.8
+  },
+  {
+    "id": 33,
+    "title": "PUBG: BATTLEGROUNDS",
+    "image": "assets\Pubg.jpg",
+    "cover": "https://media.rawg.io/media/games/1bd/1bd2657b81eb0c99338120ad444b24ff.jpg",
+    "description": "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter"
+    ],
+    "price": "27.94",
+    "rating": 8.1
+  },
+  {
+    "id": 34,
+    "title": "Enlisted",
+    "image": "assets/Enlisted.jpg",
+    "cover": "https://media.rawg.io/media/games/9da/9dad0e1b6406a4685f244c58854a0ea2.jpg",
+    "description": "Get ready to command your own World War II military squad in Gaijin and Darkflow Software’s MMO squad-based shooter Enlisted. ",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter"
+    ],
+    "price": "38.60",
+    "rating": 7.3
   }
 ]

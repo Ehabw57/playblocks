@@ -6,6 +6,11 @@ body {
 	color: cyan;
 	font-weight: 300;
 }
+
+#text{
+  font-size: 2rem;
+}
+
 .container1 {
   background-color: #0c1b2a;
   /* margin-bottom: 20px; */
