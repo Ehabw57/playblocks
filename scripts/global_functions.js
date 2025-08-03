@@ -32,6 +32,10 @@ const allPlatforms = [
   'mobile'
 ]
 
+function getRandomItems(array, count) {
+	const shuffeld = array.sort((e) => Math.random() - 0.5)
+	return shuffeld.slice(0, count)
+}
 
 function logout() {
 	sessionStorage.removeItem('currentUser')
@@ -89,56 +93,10 @@ function isProductOnCart(id) {
 	return currentUser.cart.some((p) => p.id == id)
 }
 
-// function createGameCover(game) {
-// 	const gameCover = document.createElement('div');
-// 	gameCover.className = 'game-cover';
-
-
-// 	const cover = document.createElement('div');
-// 	cover.className = 'cover-container';
-
-// 	const coverUrl = game.cover ? game.cover : './assets/notfound.png';
-// 	cover.style.backgroundImage = `url("${coverUrl}")`;
-
-
-// 	const title = document.createElement('h2');
-// 	title.textContent = game.title;
-// 	title.className = 'game-title';
-
-
-// 	gameCover.appendChild(cover);
-// 	gameCover.appendChild(title);
-
-// 	return gameCover;
-// }
-
-
-
-// function createGameCover(game) {
-// 	const gameCover = document.createElement('div');
-// 	gameCover.className = 'game-cover';
-
-// 	const cover = document.createElement('div');
-// 	cover.className = 'cover-container';
-
-// 	const coverUrl = game.cover ? game.cover : './assets/notfound.png';
-// 	cover.style.backgroundImage = `url("${coverUrl}")`;
-
-// 	const title = document.createElement('h2');
-// 	title.textContent = game.title;
-// 	title.className = 'game-title';
-
-// 	gameCover.appendChild(cover);
-// 	gameCover.appendChild(title);
-
-// 	return gameCover;
-// }
-
 function createGameCover(game) {
 	const cover = document.createElement('div')
 	cover.className = 'cover-container'
-    const coverUrl = game.cover;
-	cover.style.backgroundImage = `url("${coverUrl}")`;
+	cover.style.backgroundImage = `url(${game.cover})`
 
 	const categoryBtns = game.category.map(cat => {
 		const color = CATEGORY_COLORS[cat].color || 'gray';
@@ -163,6 +121,7 @@ function createGameCard(game) {
 	const priceText = game.price === 0 ? 'FREE' : `$${game.price}`;
 	const priceClass = game.price === 0 ? 'free-price' : '';
 	const addToCartBtn = document.createElement('button')
+
 	addToCartBtn.innerText = 'Add to Cart';
 	addToCartBtn.className = 'add-to-cart';
 	addToCartBtn.onclick = (e) => {
@@ -177,7 +136,7 @@ function createGameCard(game) {
 		<div class="rating">${game.rating}</div>
 		</div>
 		${categoryBtns}
-		<h3 class="title">${game.title}</h3>
+		<h3 onclick="window.open('./product.html?id=${game.id}', '_self')" class="title">${game.title}</h3>
 		<div class="card-footer">
 		<p class="price ${priceClass}">${priceText}</p>
 		</div> `;
@@ -698,7 +657,6 @@ data = [
     "description": "A fast-paced 3D brawler with fairytale-themed characters and chaotic multiplayer combat.",
     "category": [
       "Action",
-      "Brawler",
       "Multiplayer"
     ],
     "developer": "5minlab",

@@ -38,7 +38,7 @@ function renderGameDetails(game) {
 
 	description.innerText = game.description
 	rating.innerText  = game.rating
-	image.setAttribute('src', game.image)
+	image.setAttribute('src', game.cover)
 
 	const tagsContainer = document.createElement('div')
 	tagsContainer.className = 'tags'

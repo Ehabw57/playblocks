@@ -1,3 +1,8 @@
+body {
+background-color: #0c1b2a;
+color: white;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +10,7 @@
 }
 
 aside, main {
+	background-color: #152443;
 	margin-inline: 10px;
 	margin-top: 70px;
 	height: 92vh;
@@ -12,19 +18,19 @@ aside, main {
 
 main {
 	float: right;
-	width: 76%;
+	width: 77%;
 }
 
 aside{
 	float: left;
-    background-color: rgba(128, 128, 128, 0.425);
     width: 20%;
 	padding: 10px 20px;
 }
 
 main input {
 	border-radius: 20px;
-	padding: 9px 20px;
+	padding: 5px 20px;
+	font-size: 18px;
 	width: 70%;
 	margin-left: 10%;
 	display: inline-block;
@@ -42,35 +48,62 @@ main input {
 }
 
 .cover-container {
-	height: 300px;
-	width: 98%;
+	height: 380px;
+	width: 92%;
 	margin-inline: auto;
+	background-size: cover;
+	background-position: bottom;
 }
+
+.cover-container .catogory:nth-child(1) {
+	margin-block: 20px ;
+	margin-left: 20px;
+}
+
 
 .cover-container h2 {
 	font-size: 70px;
+	margin: 0;
 	position: relative;
-	top: 40%;
+	padding: 20px;
+	top: 50%;
 }
 
 #cardsContainer {
-	width: 100%;
-	justify-content: center;
-	margin-top: 20px;
+	width: 92%;
+	margin: 0 auto;
+	margin-top: 15px;
 	overflow-y: auto;
 	scrollbar-width: none;
-	height: 60%;
+	height: 50%;
 }
 
 .card-container {
-	margin-inline: 1%;
+	margin-inline: 1.3%;
 	margin-bottom: 20px;
+	width: 223px;
+	background-color: royalbluey;
+	padding-inline: 12px;
+
 }
 
 .image-container{
-	width: 280px;
-	height: 320px;
+	width: 200px;
+	height: 240px;
+}
 
+.title {
+	font-size: 15px;
+}
+
+.card-container .catogory {
+	font-size: 11px;
+	padding: 3px 6px;
+	margin-bottom: 3px;
+}
+
+.add-to-cart {
+	font-size: 12px;
 }
 
 aside input[type="checkbox"] {

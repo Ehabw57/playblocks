@@ -6,14 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Product Page</title>
   <link rel="stylesheet" href="./stylesheets/card.css">
+  <link rel="stylesheet" href="./stylesheets/nav.css">
   <link rel="stylesheet" href="./stylesheets/product.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <script src="scripts/global_functions.js"></script>
 </head>
 
 <body>
-  <script src='./scripts/handel_redirect.js'></script>
-  <header>
+	<script src='./scripts/handel_redirect.js'></script>
+	<nav>
+		<div class="containerFloat-left">
+			<div class="logo-Horizantal">
+				<a href="./home.html"></a> 
+			</div>
+			<input id="searchInput" type='text' placeholder="search"  />
+			<i onclick="search()" class="search fa-solid fa-magnifying-glass"></i>
+		</div>
+
+		<div class="containerFloat-right">
+			<i onclick="window.open('./cart.html', '_self')" class="fa-solid fa-cart-shopping"></i>
+			<span id="cart-count">0</span>
+
+			<button onclick='logout()' class="out">logout</button>
+		</div>
+	</nav>
+	<header>
     <img id='cover' src="./assets/RocketLeague.jpg" alt="Rocket League" />
   </header>
 

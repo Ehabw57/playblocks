@@ -3,6 +3,7 @@ const currentUser = getCurrentUser();
 userTitle.innerText = currentUser.userName
 updateCartCount()
 
+
     function generateTopRatedSection(games) {
       const root = document.getElementsByTagName('main')[0];
 
@@ -28,10 +29,6 @@ updateCartCount()
 
     generateTopRatedSection(data);
 
-    function getRandomItems(array, count) {
-      const shuffled = [...array].sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, count);
-    }
 
     function generateSection(sectionKey, value, games) {
       const root = document.getElementsByTagName('main')[0]

@@ -30,7 +30,6 @@ function  rewriteContent(games) {
 		cardsContainer.appendChild(createGameCard(games[i]));
 	}
 	coverContainer.appendChild(createGameCover(games[0]))
-	console.log(coverContainer)
 	root.appendChild(coverContainer)
 	root.appendChild(cardsContainer)
 }
