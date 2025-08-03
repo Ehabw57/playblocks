@@ -61,3 +61,27 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+
+.cover-container {
+	width: 700px;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+}
+
+.cover-container:hover {
+	transform: scale(1.03);
+}
+
+.game-title {
+	margin: 5px;
+	font-size: 30px;
+	color: #fff;
+	text-align: left;
+	background-color: transparent;
+}
