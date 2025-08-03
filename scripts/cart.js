@@ -36,9 +36,23 @@ updateCartCount();
 document.getElementById("checkout-btn").addEventListener("click", () => {
   const user = getCurrentUser();
   if (!user || !user.cart || user.cart.length === 0) {
-    alert(" Your cart is empty. Add some products first.");
-  } else {
-    alert(`Thank you, ${user.userName}! Proceeding to checkout.`);
-   
+    alert("Your cart is empty. Add some products first.");
+    return;
   }
+
+  alert(`Thank you, ${user.userName}! Proceeding to checkout.`);
+
+  user.cart = [];
+  sessionStorage.setItem('currentUser', JSON.stringify(user));
+
+  const users = getUsersData();
+  const index = users.findIndex(u => u.userName === user.userName);
+  if (index !== -1) {
+    users[index].cart = [];
+    parseUsersData(users);
+  }
+
+  
+  location.reload();
 });
+

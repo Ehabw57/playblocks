@@ -26,8 +26,10 @@ function loginCheck() {
 
   if (user) {
     if (user.password === password.value) {
-		sessionStorage.setItem("currentUser", JSON.stringify(user));
+		if (!user.cart) user.cart = []; //
+    sessionStorage.setItem('currentUser', JSON.stringify(user));
 		window.open('../home.html', '_self');
+     location.reload();
     } else {
       alert("Sorry, wrong password");
     }
@@ -37,6 +39,8 @@ function loginCheck() {
 
   loginBtn.disabled = false;
 }
+
+
 
 
 
