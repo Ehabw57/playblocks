@@ -20,6 +20,9 @@ updateCartCount()
 
       topTwo.forEach(game => {
         const cover = createGameCover(game);
+		  cover.onclick = function() {
+			  window.open(`./product.html?id=${game.id}`, '_self')
+		  }
         sectionDiv.appendChild(cover);
       });
 
@@ -49,6 +52,7 @@ updateCartCount()
         sectionDiv.appendChild(card);
       });
 
+
       root.appendChild(heading);
       root.appendChild(sectionDiv);
     }
@@ -61,40 +65,8 @@ const randomPlatform = allPlatforms[Math.floor(Math.random() * allPlatforms.leng
 generateSection('platform', randomPlatform, data);
 generateSection('category', randomCategory, data); 
 
-
-
-
-
-
-
-// function generateSection(sectionKey, value, games) {
-//   const root = document.getElementsByTagName('main')[0];
-//   const title = sectionKey == 'platform' 
-//     ? `Available on ${value}` 
-//     : `Hot in ${value}`;
-
-//   const heading = document.createElement('h2');
-//   heading.textContent = title;
-
-//   const sectionDiv = document.createElement('section');
-//   sectionDiv.className = 'section';
-
-//   const filtered = games.filter(g => g[sectionKey].includes(value));
-//   
-
-//   randomGames.forEach(game => {
-//     const card = createGameCard(game);
-//     sectionDiv.appendChild(card);
-//   });
-
-//   root.appendChild(heading);
-//   root.appendChild(sectionDiv);
-// }
-
-// let randomCategory = allCategories[Math.floor(Math.random() * allCategories.length)];
-// const randomPlatform = allPlatforms[Math.floor(Math.random() * allPlatforms.length)];
-
-// generateSection('platform', randomPlatform, data);
-// generateSection('category', randomCategory, data);
-
-
+const root = document.getElementsByTagName('main')[0];
+const allProducts = document.createElement('a')
+allProducts.innerText = 'All Products'
+allProducts.href = './search.html?q='
+root.appendChild(allProducts)

@@ -16,8 +16,7 @@
 	<script src='./scripts/handel_redirect.js'></script>
 	<nav>
 		<div class="containerFloat-left">
-			<div class="logo-Horizantal">
-				<a href="./home.html"></a> 
+			<div onclick="window.open('./home.html', '_self')" class="logo-Horizantal">
 			</div>
 			<input id="searchInput" type='text' placeholder="search"  />
 			<i onclick="search()" class="search fa-solid fa-magnifying-glass"></i>
@@ -31,30 +30,29 @@
 		</div>
 	</nav>
 	<header>
-    <img id='cover' src="./assets/RocketLeague.jpg" alt="Rocket League" />
+    <img id='cover' alt="Rocket League" />
   </header>
 
   <div class="container">
-    <h1 id="title">ROCKET LEAGUE</h1>
+    <h1 id="title"></h1>
 
     <div class="stars">
 		<span>★★★★★</span>
-		<span id='rate'>4.6</span>
+		<span id='rate'></span>
     </div>
 
 	<div id='metaData'></div>
 
     <p id='desc' class="description">
-      Players take on the role of a mysterious vigilante, exploring a neon-lit metropolis...
     </p>
 
     <div class="price-cart">
-      <button class="btn">ADD TO CART</button>
-      <div id="price" class="price">$29.00</div>
+      <button id='add-to-cart' class="btn">ADD TO CART</button>
+      <div id="price" class="price"></div>
     </div>
 
     <div class="related-products">
-      <h2>RELATED PRODUCTS</h2>
+      <h2></h2>
       <div id='relatedProducts' class="product-list">
       </div>
     </div>

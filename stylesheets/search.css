@@ -10,7 +10,7 @@ color: white;
 }
 
 aside, main {
-	background-color: #152443;
+	background-color: #011526;
 	margin-inline: 10px;
 	margin-top: 70px;
 	height: 92vh;
@@ -24,7 +24,7 @@ main {
 aside{
 	float: left;
     width: 20%;
-	padding: 10px 20px;
+	padding: 0px 20px 10px;
 }
 
 main input {
@@ -115,12 +115,15 @@ aside input[type="checkbox"] {
 
 aside input[type="number"] {
 	width: 40%;
+	font-size: 18px;
 	margin-block: 15px;
 	margin-inline: 10px;
-	padding: 20px 30px;
+	padding: 15px 30px;
 	border-radius: 20px;
 	outline: none;
 	border: none;
+	color: #fff;
+	background-color: #042a6f;
 }
 
 .price-container {
@@ -136,13 +139,19 @@ aside button {
 	padding: 15px 20px;
 	border-radius: 40px;
 	border: none;
+	background-color: #3d46f2;
+	color: #f0f0f0;
+}
+
+aside button:hover{
+	background-color: #049ABF;
 }
 
 
 
 
 aside h2{
-    margin-top: 0px;
+    margin-bottom: 10px;
     margin-left: 10px;
     padding-top: 15px;
 }

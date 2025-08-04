@@ -22,14 +22,11 @@ const allCategories = Object.keys(CATEGORY_COLORS)
 
 const allPlatforms = [
   'PC',
-  'PS5',
   'Switch',
-  'PS4',
+  'PS',
   'Mobile',
   'Xbox',
   'Nintendo',
-  'PS3',
-  'mobile'
 ]
 
 function getRandomItems(array, count) {
@@ -161,7 +158,7 @@ data = [
     "developer": "FromSoftware",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2022-02-25",
@@ -181,7 +178,7 @@ data = [
     "developer": "miHoYo",
     "platform": [
       "PC",
-      "PS5"
+      "PS"
     ],
     "release_date": "2020-09-27",
     "rating": 7.4,
@@ -200,7 +197,7 @@ data = [
     "platform": [
       "PC",
       "Switch",
-      "PS4",
+      "PS",
       "Xbox"
     ],
     "release_date": "2017-02-24",
@@ -219,7 +216,7 @@ data = [
     "developer": "Atlus",
     "platform": [
       "PC",
-      "PS4"
+      "PS"
     ],
     "release_date": "2016-09-15",
     "rating": 6.3,
@@ -237,7 +234,7 @@ data = [
     "developer": "CD Projekt Red",
     "platform": [
       "PC",
-      "PS4",
+      "PS",
       "Xbox",
       "Switch"
     ],
@@ -258,7 +255,7 @@ data = [
     "platform": [
       "PC",
       "Switch",
-      "PS4",
+      "PS",
       "Xbox",
       "Mobile"
     ],
@@ -278,8 +275,7 @@ data = [
     "developer": "CD Projekt Red",
     "platform": [
       "PC",
-      "PS4",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2020-12-10",
@@ -299,7 +295,7 @@ data = [
     "developer": "Blizzard Entertainment",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox",
       "Switch"
     ],
@@ -320,7 +316,7 @@ data = [
     "developer": "Capcom",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "xbox"
     ],
     "release_date": "2023-03-24",
@@ -340,8 +336,7 @@ data = [
     "developer": "Epic Games",
     "platform": [
       "PC",
-      "PS4",
-      "PS5",
+      "PS",
       "Xbox",
       "Switch",
       "Mobile"
@@ -362,7 +357,7 @@ data = [
     "developer": "Mediatonic",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox",
       "Nintendo"
     ],
@@ -382,7 +377,7 @@ data = [
     "developer": "EA Sports",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2020-09-29",
@@ -401,7 +396,7 @@ data = [
     "developer": "Infinity Ward",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2020-03-10",
@@ -420,7 +415,7 @@ data = [
     "developer": "Mojang",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox",
       "Nintendo",
       "Mobile"
@@ -459,7 +454,7 @@ data = [
     "developer": "Respawn Entertainment",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox",
       "Nintendo"
     ],
@@ -480,7 +475,7 @@ data = [
     "developer": "Psyonix",
     "platform": [
       "PC",
-      "PS5",
+      "PS",
       "Xbox",
       "Nintendo"
     ],
@@ -502,7 +497,7 @@ data = [
       "PC",
       "Xbox",
       "Nintendo",
-      "PS4"
+      "PS"
     ],
     "release_date": "2017-09-29",
     "rating": 9,
@@ -522,8 +517,7 @@ data = [
     "developer": "Hazelight Studios",
     "platform": [
       "PC",
-      "PS4",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2021-03-26",
@@ -542,8 +536,7 @@ data = [
     "developer": "One More Level",
     "platform": [
       "PC",
-      "PS4",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2020-10-27",
@@ -582,10 +575,9 @@ data = [
     ],
     "developer": "Rockstar Games",
     "platform": [
-      "PS3",
+      "PS",
       "Xbox",
       "Nintendo",
-      "PS4"
     ],
     "release_date": "2010-05-18",
     "rating": 9.9,
@@ -605,7 +597,7 @@ data = [
     "developer": "Valve",
     "platform": [
       "PC",
-      "PS3",
+      "PS",
       "Xbox"
     ],
     "release_date": "2011-04-19",
@@ -680,9 +672,7 @@ data = [
     ],
     "developer": "Naughty Dog",
     "platform": [
-      "PS3",
-      "PS4",
-      "PS5",
+      "PS",
       "PC"
     ],
     "release_date": "2013-06-14",
@@ -702,7 +692,7 @@ data = [
     "platform": [
       "PC",
       "Xbox",
-      "PS3"
+      "PS"
     ],
     "release_date": "2007-11-20",
     "rating": 9,
@@ -721,8 +711,7 @@ data = [
     ],
     "developer": "Sucker Punch Productions",
     "platform": [
-      "PS4",
-      "PS3",
+      "PS",
       "PC"
     ],
     "release_date": "2020-07-17",
@@ -743,8 +732,7 @@ data = [
     "developer": "Remedy Entertainment",
     "platform": [
       "PC",
-      "PS4",
-      "PS5",
+      "PS",
       "Xbox"
     ],
     "release_date": "2019-08-27",
@@ -812,7 +800,7 @@ data = [
     "category": [
       "Shooter"
     ],
-    "price": "38.60",
+    "price": 38.60,
     "rating": 7.3
   }
 ]

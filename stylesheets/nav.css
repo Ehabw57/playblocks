@@ -3,21 +3,21 @@
     padding: 0;
 }
 
+
 nav{
     height: 55px;
-    background-color: #000000;
+    background-color: #010500;
 	color: white;
 	position: fixed;
 	width:100%;
 	z-index: 1;
 }
 
-
-
 .containerFloat-left{
     float: left;
     display: inline;
 }
+ 
 .logo-Horizantal{
 	height: 50px;
 	width: 100px;
@@ -29,20 +29,21 @@ nav{
 }
 
 nav input{
-    all: unset;
-    border: 2px solid transparent;
+	outline: none;
+	border: none;
     margin-top: 17px;
     width: 367px;
     height: 20px;
     background-color: rgb(177, 179, 178);
     border-radius: 20px;
     margin-left: 30px;
-    padding-left: 8px   ;
+    padding-left: 26px   ;
+	padding-block: 3px;
     color: rgb(23, 24, 24);
 }
 
 input:focus{
-    border-color: #aa00ff;
+	outline: 1px solid #5d76f2;
 }
 
 input::placeholder{
@@ -61,36 +62,36 @@ input::placeholder{
     float: right;
 }
 
-
 i {
-	font-size: 20px;
+	font-size: 25px;
 	vertical-align: middle;
     cursor: pointer;
 }
+
 #cart-count {
   position: absolute;
   top: 3px;
-  right: 120px;
-  background: #00aaff;
+  right: 170px;
+  background: #048abf;
   color: white;
   font-size: 14px;
   font-weight: bold;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
+  padding: 2px;
   text-align: center;
-  /* border: 2px solid black; */
 }
 
 .out{
-    width: 90px;
-    height: 25px;
+    width: 100px;
+    height: 28px;
     background-color: red;
     color: white;
     border-radius: 10px;
     border: 0;
     float: right;
-    margin-inline: 19px;
+    margin-inline: 40px;
     cursor: pointer;
 }
 

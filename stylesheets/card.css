@@ -1,6 +1,5 @@
 main {
 	padding: 28px;
-	background-color: #000000;
 }
 main h2 {
 	margin: 60px 0px 20px;
@@ -17,13 +16,13 @@ main h2 {
 
 .card-container {
 	display: inline-block;
-	background-color: #122143;
-	border:none;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+	background-color: #2f2f50;
+	box-shadow: 2px 4px 22px black;
 	padding: 20px;
 	position: relative;
 	width: fit-content
 }
+
 
 .image-container {
 	position: relative;
@@ -49,25 +48,16 @@ main h2 {
 	right: 10px;
 }
 
-
-.catogory {
-	cursor: pointer;
-	padding: 1px 9px;
-	border: none;
-	margin-right: 4px;
-	margin-top: 12px;
-	font-size: 16px;
-	color: white;
-}
-
 .title {
 	font-size: 22px;         
 	margin: 10px 0 5px 0;
 	color: white;
+	width: 95%;
 	text-transform: uppercase;
 	white-space: nowrap;    
 	overflow: hidden;       
 	text-overflow: ellipsis; 
+	cursor: pointer;
 }
 
 .price {
@@ -103,8 +93,8 @@ main h2 {
 }
 
 .add-to-cart:disabled {
+	opacity: 0.5;
 	background-color: gray;
-	color: darkgray;
 	cursor: not-allowed;
 }
 
@@ -116,13 +106,12 @@ main h2 {
 .catogory {
   border-radius: 12px;
   padding: 5px 10px;
-  margin: 5px 5px 10px 0;
+  margin: 10px 5px 10px 0;
   border: none;
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   cursor: default;
   display: inline-block;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .catogory:hover {
@@ -132,4 +121,5 @@ main h2 {
 
 .card-container:hover {
 	transform: scale(1.03);
+	transition: all 300ms ;
 }

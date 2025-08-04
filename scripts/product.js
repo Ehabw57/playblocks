@@ -3,9 +3,7 @@ const PLATFORMICONS = {
 	"Mobile": 'fa-solid fa-mobile-screen-button',
 	"PC" : 'fa-solid fa-desktop',
 	"xbox" : 'fa-brands fa-xbox',
-	"PS3": 'fa-brands fa-playstation',
-	"PS4": 'fa-brands fa-playstation',
-	"PS5": 'fa-brands fa-playstation',
+	"PS": 'fa-brands fa-playstation',
 	"Nintendo": 'fa-brands fa-steam'
 }
 
@@ -20,14 +18,20 @@ const rating = document.getElementById("rate")
 const description = document.getElementById('desc')
 const price = document.getElementById('price')
 const meataData = document.getElementById('metaData')
+const addToCart = document.getElementById('add-to-cart')
 const relatedProducts = document.getElementById('relatedProducts')
 
 renderGameDetails(game)
+updateCartCount();
 
 
 
 
 function renderGameDetails(game) {
+	if (!game) {
+		document.body.innerHTML = '<h1>opps! looks like you are testing our website!! have Fun :)</h1>'
+		return
+	}
 	gameTitle.innerText = game.title
 	if ( game.price < 1) {
 		price.innerText = 'FREE'
@@ -68,5 +72,12 @@ function renderGameDetails(game) {
 
 	meataData.appendChild(tagsContainer)
 	meataData.appendChild(paltformsContainer)
+
+	addToCart.onclick = function (e) {
+		e.target.disabled = true;
+		addToUserCart(game)
+	}
+
+	addToCart.disabled = isProductOnCart(game.id)
 }
 

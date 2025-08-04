@@ -1,5 +1,8 @@
 footer{
-	background-color:#0c1b2a;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	padding-left: 120px;
+	background-color:#010510;
 	color: white;
 }
 /* the headers of each footer container */
@@ -89,12 +92,12 @@ footer .container a:hover{
 	
 }
 
-
-
 footer small {
 	text-align: center;
 	display: block;
-	font-size: 15px;
+	font-size: 20px;
+	padding-block: 16px;
+
 }
 
 .clear {

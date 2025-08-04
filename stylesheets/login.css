@@ -1,9 +1,13 @@
 body {
-  background-color: #0b001a;
+  background-color: #011526;
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
+}
+
+main {
+	margin-top: 7%;
 }
 
 h1 {
@@ -34,7 +38,7 @@ form {
 .input-container input {
   width: 100%;
   padding: 15px 50px 15px 70px;
-  background-color: #0b001a;
+  background-color: #011526;
   border: 0.2px solid #a855f7;
   border-radius: 10px;
   color: white;
@@ -82,7 +86,7 @@ form {
 #forget {
   text-align: right;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   color: #a855f7;
   font-size: 14px;
   text-decoration: none;
@@ -94,7 +98,7 @@ form {
 
 #login-btn {
   width: 100%;
-  background: #a855f7;
+  background: #0d46f2;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -107,7 +111,11 @@ form {
 }
 
 #login-btn:hover {
-  background: #9333ea;
+	background-color: #048abf;
+}
+
+#login-btn:disabled {
+  background: #032ca6;
 }
 
 small {
@@ -125,5 +133,5 @@ a#register {
 }
 
 a#register:hover {
-  color: #c1a5db;
+  color: #aaa;
 }
