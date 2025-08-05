@@ -145,12 +145,12 @@ function createGameCard(game) {
 }
 
 
-data = [
+data =  [
   {
     "id": 1,
     "title": "Elden Ring",
     "image": "assets/EldenRing.jpg",
-    "cover": "https://media.rawg.io/media/games/b29/b294fdd866dcdb643e7bab370a552855.jpg",
+    "cover": "assets/EldenRingCover.jpg",
     "description": "An open-world action RPG set in a fantasy realm created by Hidetaka Miyazaki and George R.R. Martin.",
     "category": [
       "Action",
@@ -167,32 +167,33 @@ data = [
     "price": 59.99
   },
   {
-    "id": 2,
-    "title": "Genshin Impact",
-    "image": "assets/GenshinImpact.jpg",
-    "cover": "https://media.rawg.io/media/games/c38/c38bdb5da139005777176d33c463d70f.jpg",
-    "description": "",
-    "category": [
-      "RGP",
-      "Adventure"
-    ],
-    "developer": "miHoYo",
-    "platform": [
-      "PC",
-      "PS"
-    ],
-    "release_date": "2020-09-27",
-    "rating": 7.4,
-    "price": 30
-  },
+  "id": 2,
+  "title": "Genshin Impact",
+  "image": "assets/GenshinImpact.jpg",
+  "cover": "assets/GenshinImpactCover.jpg",
+  "description": "An expansive open-world action RPG where players explore the magical realm of Teyvat.",
+  "category": [
+    "RGP",
+    "Adventure"
+  ],
+  "developer": "miHoYo",
+  "platform": [
+    "PC",
+    "PS"
+  ],
+  "release_date": "2020-09-27",
+  "rating": 7.4,
+  "price": 30.99
+},
   {
     "id": 3,
     "title": "Hollow Knight",
     "image": "assets/HollowKnight.png",
-    "cover": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg",
+    "cover": "assets/HollowKnightCover.jpg",
     "description": "Explore a vast ruined kingdom of insects and heroes in this challenging Metroidvania.",
     "category": [
-      "Action"
+      "Action",
+      "Adventure"
     ],
     "developer": "Team Cherry",
     "platform": [
@@ -202,7 +203,7 @@ data = [
       "Xbox"
     ],
     "release_date": "2017-02-24",
-    "rating": 9,
+    "rating": 9.1,
     "price": 14.99
   },
   {
@@ -212,7 +213,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/3ea/3ea0e57ede873970c0f1130e30d88749.jpg",
     "description": "Inside a casino, during one of their heists, the group known as Phantom Thieves of Hearts is cornered by the police...",
     "category": [
-      "RGP"
+      "RGP",
+      "Adventure"
     ],
     "developer": "Atlus",
     "platform": [
@@ -227,10 +229,12 @@ data = [
     "id": 5,
     "title": "The Witcher 3: Wild Hunt",
     "image": "assets/TheWitcherWildHunt.jpg",
-    "cover": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+    "cover": "assets/TheWitcherWildHuntCover.webp",
     "description": "A story-driven RPG with deep narrative and expansive world.",
     "category": [
-      "Adventure"
+      "Adventure",
+      "Open World"
+      
     ],
     "developer": "CD Projekt Red",
     "platform": [
@@ -250,7 +254,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg",
     "description": "A relaxing farming simulation game with charming characters and endless activities.",
     "category": [
-      "Simulation"
+      "Simulation",
+      "Adventure"
     ],
     "developer": "ConcernedApe",
     "platform": [
@@ -271,7 +276,10 @@ data = [
     "cover": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
     "description": "An open-world sci-fi RPG set in a dystopian future city.",
     "category": [
-      "Action"
+      "Action",
+      "Shooter",
+      "Multiplayer"
+
     ],
     "developer": "CD Projekt Red",
     "platform": [
@@ -280,7 +288,7 @@ data = [
       "Xbox"
     ],
     "release_date": "2020-12-10",
-    "rating": 8,
+    "rating": 8.5,
     "price": 49.99
   },
   {
@@ -328,7 +336,7 @@ data = [
     "id": 10,
     "title": "Fortnite",
     "image": "assets/Fortnite.jpg",
-    "cover": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg",
+    "cover": "assets/FortniteCover.jpg",
     "description": "A battle royale game with building mechanics and regular seasonal updates.",
     "category": [
       "Shooter",
@@ -353,7 +361,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg",
     "description": "Multiplayer party game where players compete in obstacle courses until one remains.",
     "category": [
-      "Party"
+      "Party",
+      "Simulation"
     ],
     "developer": "Mediatonic",
     "platform": [
@@ -373,7 +382,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/031/031af38e6a558d4cd4bf91ee80904cdf.jpg",
     "description": "Realistic football simulation with updated teams and leagues.",
     "category": [
-      "Sports"
+      "Sports",
+      "Simulation"
     ],
     "developer": "EA Sports",
     "platform": [
@@ -392,7 +402,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/7e3/7e327a055bedb9b6d1be86593bef473d.jpg",
     "description": "Free-to-play battle royale experience in the Call of Duty universe.",
     "category": [
-      "Shooter"
+      "Shooter",
+      "Multiplayer"
     ],
     "developer": "Infinity Ward",
     "platform": [
@@ -411,7 +422,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
     "description": "Open-world sandbox game focused on building and survival.",
     "category": [
-      "Survival"
+      "Survival",
+      "Simulation"
     ],
     "developer": "Mojang",
     "platform": [
@@ -432,7 +444,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/e74/e74458058b35e01c1ae3feeb39a3f724.jpg",
     "description": "Social deduction game where crewmates try to identify impostors.",
     "category": [
-      "Party"
+      "Party",
+      "Puzzle"
     ],
     "developer": "Innersloth",
     "platform": [
@@ -450,7 +463,8 @@ data = [
     "description": "Hero-based battle royale shooter with unique abilities.",
     "cover": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg",
     "category": [
-      "Shooter"
+      "Shooter",
+      "Adventure"
     ],
     "developer": "Respawn Entertainment",
     "platform": [
@@ -491,7 +505,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg",
     "description": "A classic run and gun action game heavily focused on boss battles, with a hand-drawn 1930s cartoon style.",
     "category": [
-      "Action"
+      "Action",
+     "Adventure"
     ],
     "developer": "Studio MDHR",
     "platform": [
@@ -501,7 +516,7 @@ data = [
       "PS"
     ],
     "release_date": "2017-09-29",
-    "rating": 9,
+    "rating": 9.2,
     "price": 19.99
   },
   {
@@ -532,7 +547,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg",
     "description": "A fast-paced first-person slasher set in a dystopian cyberpunk world with one-hit kills and parkour mechanics.",
     "category": [
-      "Action"
+      "Action",
+      "Adventure"
     ],
     "developer": "One More Level",
     "platform": [
@@ -548,7 +564,7 @@ data = [
     "id": 21,
     "title": "The Legend of Zelda",
     "image": "assets/LegendOfZelda.jpg",
-    "cover": "https://media.rawg.io/media/games/f87/f87de0e93f02007fd044e4bf04d453d8.jpg",
+    "cover": "assets/TheLegendofZeldaCover.jpg",
     "description": "Explore a vast open world as Link in this critically acclaimed action-adventure set in the kingdom of Hyrule.",
     "category": [
       "Adventure",
@@ -627,7 +643,7 @@ data = [
     "id": 25,
     "title": "Solo Leveling: ARISE",
     "image": "assets/SoloLeveling.webp",
-    "cover": "https://cdn.nivoli.com/rpggamers/images/games/12865/solo-levelingarise-header.jpg",
+    "cover": "assets/SoloLevelingARISECover.jpg",
     "description": "Based on the hit webtoon, play as Sung Jin-Woo and rise as the strongest hunter in this stylish action RPG.",
     "category": [
       "Action",
@@ -646,7 +662,7 @@ data = [
     "id": 26,
     "title": "Smash Legends",
     "image": "assets/SmashLegends.jpeg",
-    "cover": "https://media.rawg.io/media/screenshots/049/0493da9807a136fc5aae29be91d686fc.jpg",
+    "cover": "assets/SmashLegendsCover.jpg",
     "description": "A fast-paced 3D brawler with fairytale-themed characters and chaotic multiplayer combat.",
     "category": [
       "Action",
@@ -687,7 +703,8 @@ data = [
     "cover": "https://media.rawg.io/media/games/3cf/3cff89996570cf29a10eb9cd967dcf73.jpg",
     "description": "A sci-fi RPG where you play Commander Shepard in a galaxy-spanning war against a powerful ancient race.",
     "category": [
-      "Sci-Fi"
+      "Sci-Fi",
+       "Co-op"
     ],
     "developer": "BioWare",
     "platform": [
@@ -696,7 +713,7 @@ data = [
       "PS"
     ],
     "release_date": "2007-11-20",
-    "rating": 9,
+    "rating": 9.3,
     "price": 19.99
   },
   {
@@ -744,7 +761,7 @@ data = [
     "id": 31,
     "title": "Tarisland",
     "image": "assets/Tarisland.jpg",
-    "cover": "https://media.rawg.io/media/screenshots/961/961c11b296449593202e601951f80d2b.jpg",
+    "cover": "assets/TarislandCover.webp",
     "description": "A cross-platform MMORPG developed by Level Infinite and Published by Tencent.",
     "platform": [
       "PC",
@@ -753,23 +770,24 @@ data = [
     "category": [
       "Action"
     ],
-    "price": "5.66",
+    "price": 5.66,
     "rating": 6.3
   },
   {
     "id": 32,
     "title": "Predecessor",
     "image": "assets/Predecessor.jpg",
-    "cover": "https://media.rawg.io/media/screenshots/6a0/6a0117d2dba5284ff13d0d08bf57beed.jpg",
+    "cover": "assets/PredecessorCover.jpg",
     "description": "A free-to-play MOBA shooter developed and published by Omeda Studios.",
     "platform": [
       "PC",
       "Xbox"
     ],
     "category": [
-      "Action"
+      "Action",
+     "Shooter"
     ],
-    "price": "58.70",
+    "price": 58.70,
     "rating": 7.8
   },
   {
@@ -783,9 +801,10 @@ data = [
       "Xbox"
     ],
     "category": [
-      "Shooter"
+      "Shooter",
+      "Adventure"
     ],
-    "price": "27.94",
+    "price": 27.94,
     "rating": 8.1
   },
   {
@@ -799,9 +818,441 @@ data = [
       "Xbox"
     ],
     "category": [
-      "Shooter"
+      "Shooter",
+      "Action"
     ],
     "price": 38.60,
     "rating": 7.3
+  },
+  {
+    "id": 35,
+    "title": "Sky: Children of the Light",
+    "image": "assets/Sky.webp",
+    "cover": "https://media.rawg.io/media/games/cb1/cb14d42b58bdb6cf5948d0eed778c2f0.jpg",
+    "description": "A cozy free-to-play MMORPG from thatgamecompany.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Simulation",
+      "Puzzle"
+    ],
+    "price": 28.80,
+    "rating": 7.3
+  },
+  {
+    "id": 36,
+    "title": "FragPunk",
+    "image": "assets/FragPunk.jpg",
+    "cover": "https://xboxwire.thesourcemediaassets.com/sites/2/2025/01/key-art-f92e3d5597e9bc0e0a34.jpg",
+    "description": "A free-to-play 5v5 hero shooter that uses cards to modify matches.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Adventure"
+    ],
+    "price": 13.23,
+    "rating": 8.3
+  },
+  {
+    "id": 37,
+    "title": "Throne And Liberty",
+    "image": "assets/ThroneAndLiberty.webp",
+    "cover": "https://media.rawg.io/media/screenshots/f5a/f5a47c651a93a57b6b0341b2af53e966.jpg",
+    "description": "A free-to-play multi-platorm MMORPG from NCSoft and Amazon Games.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action",
+      "Open World"
+    ],
+    "price": 17.33,
+    "rating": 4.3
+  },
+  {
+    "id": 38,
+    "title": "Stormgate",
+    "image": "assets/Stormgate.webp",
+    "cover": "https://media.rawg.io/media/games/4d3/4d37e250f89323a59bd83243ca271305.jpg",
+    "description": "A free-to-play science fantasy real-time strategy game in which humans and robots defend Earth from alien forces.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action",
+      "Open World"
+    ],
+    "price": 20.07,
+    "rating": 6.4
+  },
+  {
+    "id": 39,
+    "title": "Once Human",
+    "image": "assets/OnceHuman.webp",
+    "cover": "https://gaming-cdn.com/images/products/15599/orig/once-human-pc-game-steam-cover.jpg?v=1720602609",
+    "description": "A post-apocalyptic open-world survival game from Starry Studio.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Sci-Fi"
+    ],
+    "price": 30.60,
+    "rating": 8.7
+  },
+  {
+    "id": 40,
+    "title": "Vigor",
+    "image": "assets/Vigor.jpg",
+    "cover": "https://media.rawg.io/media/games/bbe/bbec05fb0c57c24c92dbe09699d4968d.jpg",
+    "description": "A free-to-play looter shooter from the developers of Operation Flashpoint and the Arma series.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 11.97,
+    "rating": 6.1
+  },
+  {
+    "id": 41,
+    "title": "Neverwinter",
+    "image": "assets/Neverwinter.webp",
+    "cover": "assets/NeverwinterCover.jpg",
+    "description": "A free-to-play 3D action MMORPG based on the acclaimed Dungeons & Dragons fantasy roleplaying game. ",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action",
+      "Open World",
+      "Adventure"
+    ],
+    "price": 36.59,
+    "rating": 4.4
+  },
+  {
+    "id": 42,
+    "title": "Spectre Divide",
+    "image": "assets/SpectreDivide.jpg",
+    "cover": "https://gaming-cdn.com/images/products/17371/orig/spectre-divide-pc-game-steam-cover.jpg?v=1725354212",
+    "description": "A 3v3 tactical shooter developed and published by Mountaintop Studios in partnership with former pro gamer shroud,",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 33.58,
+    "rating": 5.6
+  },
+  {
+    "id": 43,
+    "title": "Lost Ark",
+    "image": "assets/LostArk.webp",
+    "cover": "https://d1lss44hh2trtw.cloudfront.net/assets/article/2022/03/04/lost-ark-servers_feature.jpg",
+    "description": "Smilegate’s free-to-play multiplayer ARPG is a massive adventure filled with lands waiting to be explored, people waiting to be met, and an ancient evil waiting to be destroyed.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action",
+      "Open World",
+      "Adventure"
+    ],
+    "price": 21.19,
+    "rating": 7.7
+  },
+  {
+    "id": 44,
+    "title": "War Robots: Frontiers",
+    "image": "assets/WarRobotsFrontiers.webp",
+    "cover": "https://media.rawg.io/media/games/2f9/2f97639927991fd06fc16ceae74b3495.jpg",
+    "description": "A multiplayer mech game set in a planetary system light years from Earth.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 13.41,
+    "rating": 5.8
+  },
+  {
+    "id": 45,
+    "title": "Splitgate 2",
+    "image": "assets/Splitgate2.jpg",
+    "cover": "https://www.restart.run/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwii1y9hm%2Fproduction%2F6852fef73f568f064537307e15aa0b32ce506837-1920x1080.png%3Ffm%3Dwebp%26fit%3Dmax&w=2120&q=35",
+    "description": "A free-to-play shooter using portals.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 8.50,
+    "rating": 8.4
+  },
+  {
+    "id": 46,
+    "title": "Diablo Immortal",
+    "image": "assets/DiabloImmortal.jpg",
+    "cover": "https://media.rawg.io/media/games/7fd/7fd73ef44936f8eec7732cfc299dff09.jpg",
+    "description": "Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Adventure"
+    ],
+    "price": 9.15,
+    "rating": 9.7
+  },
+  {
+    "id": 47,
+    "title": "RuneScape",
+    "image": "assets/RuneScape.webp",
+    "cover": "https://media.rawg.io/media/games/007/0073b6418763a47eb023fba88cb22e7c.jpg",
+    "description": "A popular 3D browser MMORPG boasting a huge player base and 15 years of content.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Open World",
+      "Adventure"
+    ],
+    "price": 36.68,
+    "rating": 6.5
+  },
+  {
+    "id": 48,
+    "title": "Phantasy Star Online 2",
+    "image": "assets/PhantasyStar.jpg",
+    "cover": "https://media.rawg.io/media/games/b39/b39b6aa7295720440cdeef058d8c39d3.jpg",
+    "description": "The legacy of Phantasy Star Online 2 continues a thousand years later!",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "price": 18.59,
+    "rating": 7.1
+  },
+  {
+    "id": 49,
+    "title": "Warframe",
+    "image": "assets/Warframe.webp",
+    "cover": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
+    "description": "A cooperative free-to-play third person online action shooter set in an stunning sci-fi world. ",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+     "Action"
+    ],
+    "price": 56.69,
+    "rating": 8.5
+  },
+  {
+    "id": 50,
+    "title": "Crossout",
+    "image": "assets/Crossout.webp",
+    "cover": "https://media.rawg.io/media/games/7a6/7a6f90e85a2e264c3b440bb4787cf378.jpg",
+    "description": "A post-apocalyptic MMO vehicle combat game! ",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Adventure",
+       "Co-op"
+    ],
+    "price": 55.88,
+    "rating": 6.8
+  },
+  {
+    "id": 51,
+    "title": "Brawlhalla",
+    "image": "assets/Brawlhalla.jpg",
+    "cover": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg",
+    "description": "A free-to-play 2D platform fighter inspired by the Smash Bros.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Adventure",
+      "Multiplayer"
+      
+    ],
+    "price": 35.37,
+    "rating": 4.2
+  },
+  {
+    "id": 52,
+    "title": "War Thunder",
+    "image": "assets/WarThunder.webp",
+    "cover": "https://cdna.artstation.com/p/assets/images/images/034/197/040/large/maxim-timofeev-art-battle-of-britain.jpg?1611667332",
+    "description": "A MMO shooter that puts you in command of hundreds of the finest combat vehicles of World War II.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 55.66,
+    "rating": 4.4
+  },
+  {
+    "id": 53,
+    "title": "World of Tanks",
+    "image": "assets/WorldofTanks.jpeg",
+    "cover": "https://media.rawg.io/media/games/c3b/c3be1d5f55cb9324c97ccb7aaaf42ad4.jpg",
+    "description": "If you like blowing up tanks, with a quick and intense game style you will love this game!",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 53.49,
+    "rating": 7.7
+  },
+  {
+  "id":54,
+  "title":"Robocraft",
+  "image":"https://e.snmc.io/lk/l/x/a3d8714339c982cfbe4aac9ce6bc931d/9458470",
+  "cover":"https://cdn.wallpapersafari.com/43/7/HRBxPo.jpg",
+  "description":"A free-to-play MMO sandbox building game! ",
+  "platform":[
+    "PC",
+    "Xbox"
+  ],
+  "category":[
+   "Shooter",
+   "Multiplayer",
+    "Sci-Fi"
+  ],
+ "price": 32.20,
+ "rating": 8.7,
+  },
+  {
+    "id": 55,
+    "title": "Palia",
+    "image": "assets/Palia.jpg",
+    "cover": "https://images.ctfassets.net/qyr5bjm559gz/4CMpEBA6B9deGNmeuk7MHV/8a8b168328b5055f41d931c275550f17/meta-image-december.jpg",
+    "description": "A cozy MMO with homebuilding and some adventure.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Adventure",
+      "Open World"
+    ],
+    "price": 48.56,
+    "rating": 6.3
+  },
+  {
+    "id": 56,
+    "title": "Valorant",
+    "image": "assets/Valorant.png",
+    "cover": "https://media.rawg.io/media/games/b11/b11127b9ee3c3701bd15b9af3286d20e.jpg",
+    "description": "Test your mettle in Riot Games’ character-based FPS shooter Valorant.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Co-op",
+      "Adventure"
+    ],
+    "price": 11.99,
+    "rating": 6.4
+  },
+  {
+    "id": 57,
+    "title": "Delta Force",
+    "image": "https://cdn-bgp.bluestacks.com/BGP/us/gametiles_DeltaForceHawkOps.jpg",
+    "cover": "https://cdn2.unrealengine.com/delta-force-header-1920x1080-4a97a8b7d3b2.png",
+    "description": "A free-to-play team-based tactical shooter.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Shooter",
+      "Action"
+    ],
+    "price": 36.69,
+    "rating": 8.6
+  },
+  {
+    "id": 58,
+    "title": "Tower of Fantasy",
+    "image": "assets/TowerofFantasy.jpeg",
+    "cover": "https://media.rawg.io/media/games/e35/e35b2e3c8e62e27152cc56cd56307497.jpg",
+    "description": "Tower of Fantasy is a 3D open-world RPG, anime-style sci-fi MMO RPG game with unique characters and beautiful open vistas!",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Action",
+      "Open World",
+      "Adventure"
+    ],
+    "price": 58.23,
+    "rating": 7.5
+  },
+  {
+    "id": 60,
+    "title": "Halo Infinite",
+    "image": "assets/HaloInfinite.webp",
+    "cover": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg",
+    "description": "For the first time ever, a free-to-play Halo experience is available in the form of Halo Infinite’s multiplayer.",
+    "platform": [
+      "PC",
+      "Xbox"
+    ],
+    "category": [
+      "Co-op",
+      "Shooter",
+      "Multiplayer"
+    ],
+    "price": 45.32,
+    "rating": 5.5
   }
 ]
