@@ -17,7 +17,7 @@
 			<div class="containerFloat-left">
 				<div onclick="window.open('./home.html', '_self')" class="logo-Horizantal">
 				</div>
-				<input type='text' placeholder="search"  />
+				<input onkeydown="handelInput(event)" id="searchInput" type='text' placeholder="search"  />
 				<i class="search fa-solid fa-magnifying-glass"></i>
 			</div>
 
@@ -50,7 +50,7 @@
 		</aside>
 
 		<main>
-			<input onblur="filterBySearch()"type="text" id="search" />
+			<input onkeydown="handelSearchInput(event)" onblur="filterBySearch()"type="text" id="search" />
 			<i class="search fa-solid fa-magnifying-glass search-icon"></i>
 			<section id="searchRoot"></section>
 		</main>

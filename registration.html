@@ -1,80 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="./stylesheets/registration.css" />
+  <link rel="stylesheet" href="./stylesheets/fonts.css" />
+</head>
+<body>
+	<script src='./scripts/handel_redirect.js'></script>
+  <form>
+    <h1>REGISTER</h1>
+    <h3>CREATE NEW ACCOUNT</h3>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>Register</title>
-		<link rel="stylesheet" href="stylesheets/font.css">
-		<link rel="stylesheet" href="stylesheets/registration.css">
-		<script src='./scripts/global_functions.js'></script>
-	</head>
+    <label for="username">Username:</label>
+    <input class="input" type="text" id="username" onblur="checkUsername()">
+    <small id="userNameError">Please enter a username</small>
 
-	<body>
-		<script src='./scripts/handel_redirect.js'></script>
-		<div class="title">
-			<img src="assets/logo_vert.png" alt="">
-		</div>
+    <label for="email">Email Address:</label>
+    <input class="input" type="email" id="email" onblur="checkEmail()">
+    <small id="emailError">Email should contain '@' and '.' symbols</small>
 
+    <label for="password">Password:</label>
+    <input class="input" type="password" id="password" onblur="checkPassword()">
+    <small id="passwordError">Password must be at least 6 chars long</small>
 
-		<form action="#" method="post">
-			<div class="form-title not">
-				<h3 style="text-align: center;">Create A New Account</h3>
-				<h6>It's quick and easy</h6>
-			</div>
+    <label for="cPassword">Confirm Password:</label>
+    <input class="input" type="password" id="cPassword" onblur="checkConfirmPassword()">
+    <small id="confirmPasswordError">Passwords must match</small>
 
-			<div id='checker' tabindex='1'>
-				<div class=""
-					data-error='Please use a valid email address (e.g., name@gmail.com). Temporary or disposable emails are not allowed.'>
-					<input type="email" id="email" name="email"  placeholder="email address" autocomplete="email" required >
-					<span></span>
-				</div>
-
-
-
-
-
-				<div class=""
-					data-error='Password must be at least 8 characters long and include uppercase, lowercase, a number, and a special character.'>
-					<input type="password" id="password" name="password" autocomplete="new-password" aria-autocomplete="list"
-					placeholder="Password" required>
-					<span></span>
-				</div>
-
-
-
-
-
-				<div data-error="Hmm, it looks like the passwords don’t match. Please re-enter them to make sure they’re the same">
-					<input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password"
-					placeholder="Confirm Password" required>
-					<span></span>
-				</div>
-
-
-				<div data-error="Username must be at least 5 characters, contain only letters and numbers, have no spaces, and not start or end with spaces.">
-					<input type="text" id="username" name="username" autocomplete="username" placeholder="Username"  required>
-					<span></span>
-				</div>
-			</div>
-
-
-
-
-    <div class="checkbox-container not">
-      <p>By clicking Sign Up, you agree to our <a href="">Terms</a>, <a href="">Privacy Policy</a> and <a
-          href="">Cookies Policy</a>. You may receive SMS notifications from
-        us and can opt out at any time.</p>
+    <div class="checkbox">
+      <input type="checkbox" id="agree" onchange="checkTerms()"/>
+      <label for="agree">I agree to the <a class='terms' href="#">Terms & Conditions</a></label>
     </div>
+    <small id="termsError">You must agree to this</small>
 
-    <span>
-      <button type="submit" class="submit-btn">Sign Up</button>
-    </span>
-    
-    <a href="login.html">"Do you already have an account?"
-    </a>
+    <button type="submit" id="register-btn" disabled>Register</button>
+	<p>Do you have an account?</p>
+	<a href="./login.html">LOGIN</a>
   </form>
 
-  <script src="scripts/registration.js"></script>
+  <script src='./scripts/registration.js' defer></script>
 </body>
-
 </html>
+

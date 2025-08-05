@@ -1,161 +1,100 @@
-let users = getUsersData() || []
-const registerButton = document.querySelector("button[type='submit']");
-const usrNameInpt = document.querySelector("input[id='username']");
-const passInpt = document.querySelector("input[id=password]");
-const confrmPasInp = document.querySelector("input[id=confirm-password]");
-const emailInpt = document.querySelector("input[id='email']");
+const usernameInput = document.getElementById("username");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const confirmPasswordInput = document.getElementById("cPassword");
+const termsCheckbox = document.getElementById("agree");
+const registerBtn = document.getElementById("register-btn");
 
-window.onload = function() {
-  emailInpt.focus()
+function showError(small, input, show) {
+	document.getElementById(small).classList.toggle("visible", show);
+	input.classList.toggle("not-valid", show);
 }
 
+console.log('imaworking')
 
+function checkUsername() {
+	const value = usernameInput.value.trim();
+	const small = document.getElementById("userNameError");
 
-const ValidFormat =
-  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|net|org|edu|gov|info|io|me|tech|co|ai|[a-z]{2,})$/;
-
-const TempEmail =
-  /@(mailinator\.com|tempmail.*|10minutemail\.com|guerrillamail\.com|trashmail\.com|fakeinbox\.com|yopmail\.com)$/i;
-
-emailInpt.addEventListener("blur", function () {
-  if (
-    ValidFormat.test(this.value.trim()) == false ||
-    TempEmail.test(this.value.trim()) == true
-  ) {
-    this.focus()
-    this.parentElement.classList.add("before");
-
-    this.style.border = "1px solid red";
-  } else {
-    this.style.border = "1px solid #43033d";
-    this.parentElement.classList.remove("after");
-    // if (this.parentElement.classList.contains("before")) {
-    //   this.parentElement.classList.add("after");
-    // }
-    this.parentElement.classList.remove("before");
-  }
-});
-
-emailInpt.addEventListener("focus", function () {
-  if (this.parentElement.classList.contains("before")) {
-    this.parentElement.classList.add("after");
-  }
-  this.parentElement.classList.remove("before");
-});
-
-usrNameInpt.addEventListener("blur", function () {
-  if (
-    this.value.trim().length < 5 ||
-    /[^a-zA-Z0-9]/.test(this.value) == true ||
-    this.value.trim() !== this.value ||
-    this.value.trim().split(" ").length > 1
-  ) {
-    
-    this.focus();
-    this.parentElement.classList.add("before");
-
-    this.style.border = "1px solid red";
-  } else {
-    this.style.border = "1px solid #43033d";
-    this.parentElement.classList.remove("after");
-    // if (this.parentElement.classList.contains("before")) {
-    //   this.parentElement.classList.add("after");
-    // }
-    registerButton.style.pointerEvents = "auto";
-    registerButton.style.backgroundColor = "#ba59b6";
-    this.parentElement.classList.remove("before");
-  }
-});
-
-usrNameInpt.addEventListener("focus", function () {
-  if (this.parentElement.classList.contains("before")) {
-    this.parentElement.classList.add("after");
-  }
-  this.parentElement.classList.remove("before");
-});
-
-passInpt.addEventListener("click", function() {
-  confrmPasInp.parentElement.classList.remove("before")
-  confrmPasInp.classList.remove("after")
-  this.focus( )
-})
-
-passInpt.addEventListener("blur", function () {
-  if (
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9])(?=.{8,})/.test(
-      this.value.trim()
-    ) == false ||
-    this.value.trim().length < 8
-  ) {
-    this.focus();
-    this.parentElement.classList.add("before");
-    this.style.border = "1px solid red";
-  } else {
-    this.style.border = "1px solid #43033d";
-    this.parentElement.classList.remove("after");
-    confrmPasInp.focus()
-    //  if (this.parentElement.classList.contains("before")) {
-    //    this.parentElement.classList.add("after");
-    //  }
-     this.parentElement.classList.remove("before");
-  }
-});
-
-passInpt.addEventListener("focus", function () {
-  if (this.parentElement.classList.contains("before")) {
-    this.parentElement.classList.add("after");
-  
-  }
-  this.parentElement.classList.remove("before");
-});
-
-confrmPasInp.addEventListener("focus", function () {
-  if (this.parentElement.classList.contains("before")) {
-    this.parentElement.classList.add("after");
-  }
-  this.parentElement.classList.remove("before");
-});
-
-confrmPasInp.addEventListener("blur", function () {
-  if (this.value.trim() != passInpt.value.trim()) {
-    passInpt.focus();
-    this.parentElement.classList.add("before");
-    this.style.border = "1px solid red"; 
-  } else {
-    this.style.border = "1px solid #43033d";
-    this.parentElement.classList.remove("after");
-    // if (this.parentElement.classList.contains("before")) {
-    //   this.parentElement.classList.add("after");
-    // }
-    this.parentElement.classList.remove("before");
-  }
-});
-
-// const checkButtonsArray = [usrNameInpt, emailInpt, passInpt, confrmPasInp]
-// registerButton.parentElement.addEventListener("click", function () {
-  
-  
-// });
-
-registerButton.addEventListener("click", function(e) {
-  e.preventDefault()
-  registrationCheck()
-})
-// mahmoud task  ############################
-
-function registrationCheck() {
-	let userName = usrNameInpt.value.trim();
-	let email = emailInpt.value.trim();
-	let password = passInpt.value.trim();
-
-	const userExists = users.some((user) => user.username == userName);
-	console.log(userExists)
-
-	if (userExists) {
-		alert("sorry, username is already registered .");
+	if (value === "") {
+		small.innerText = "Please enter a username";
+		small.classList.add("visible");
+		username.classList.add("not-valid")
+		return false;
+	} else if (value.includes(" ")) {
+		small.innerText = "No spaces allowed in username";
+		small.classList.add("visible");
+		username.classList.add("not-valid")
+		return false;
 	} else {
-		users.push({ userName, email, password, cart:[] });
-		parseUsersData(users)
-		window.open('../login.html', '_self');
+		small.classList.remove("visible");
+		username.classList.remove("not-valid")
+		return true;
 	}
 }
+
+function checkEmail() {
+	const email = emailInput.value.trim();
+	const valid = email.includes("@") && email.includes(".");
+	showError("emailError", emailInput, !valid);
+	return valid;
+}
+
+function checkPassword() {
+	const password = passwordInput.value;
+	const valid = password.length >= 6;
+	showError("passwordError", passwordInput, !valid);
+	return valid;
+}
+
+function checkConfirmPassword() {
+	const match = passwordInput.value === confirmPasswordInput.value;
+	showError("confirmPasswordError", confirmPasswordInput, !match);
+	return match;
+}
+
+function checkTerms() {
+	const checked = termsCheckbox.checked;
+	if(!validateAll()) {
+		termsCheckbox.checked = false
+		showError("termsError", termsCheckbox, !checked);
+	}
+	return checked;
+}
+
+function validateAll() {
+	const valid = checkUsername() &&
+		checkEmail() &&
+		checkPassword() &&
+		checkConfirmPassword();
+
+	valid ? registerBtn.disabled = false : registerBtn.disabled = true 
+	return valid
+}
+
+registerBtn.addEventListener("click", function () {
+	const userName = usernameInput.value.trim();
+	const email = emailInput.value.trim();
+
+	const users = JSON.parse(localStorage.getItem("users") || "[]");
+
+	const userExists = users.some(
+		(user) => user.username === userName || user.email === email
+	);
+
+	if (userExists) {
+		alert(`Sorry, username: ${userName} or email ${email} is already registered.`);
+		return;
+	}
+
+	users.push({
+		username: userName,
+		email: email,
+		password: passwordInput.value,
+		cart: []
+	});
+	localStorage.setItem("users", JSON.stringify(users));
+	alert('user has been registered successfully')
+
+	window.location.href = '../login.html'
+});
