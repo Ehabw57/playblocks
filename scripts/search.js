@@ -5,6 +5,8 @@ const priceFrom = document.getElementById('priceFrom')
 const priceTo = document.getElementById('priceTo')
 const root = document.getElementById('searchRoot')
 
+updateCartCount()
+
 createFitlers(platformFilter, 'platform')
 createFitlers(categoryFilter, 'category')
 const filters = document.querySelectorAll('input[type="checkbox"]');
@@ -16,21 +18,17 @@ filterBySearch()
 
 function  rewriteContent(games) {
 	root.innerHTML = '';
-	const coverContainer = document.createElement('section');
 
-	if(!games) {
-		coverContainer.id = 'NotFound';
-		root.appendChild(coverContainer)
+	if(games.length < 1) {
+		root.innerHTML = "<h1>Sorry we couldnt find any games:'(</h1>"
 		return
 	}
-	coverContainer.id = 'coverContainer';
+
 	const cardsContainer = document.createElement('section');
 	cardsContainer.id = 'cardsContainer';
-	for (let i = 1; i < games.length; i++) {
+	for (let i = 0; i < games.length; i++) {
 		cardsContainer.appendChild(createGameCard(games[i]));
 	}
-	coverContainer.appendChild(createGameCover(games[0]))
-	root.appendChild(coverContainer)
 	root.appendChild(cardsContainer)
 }
 
@@ -95,5 +93,11 @@ function createFitlers(parent, filterName) {
 		parent.appendChild(label)
 		parent.appendChild(br)
 	})
+}
+
+function handelSearchInput(e) {
+	if(e.key == 'Enter') {
+		filterBySearch()
+	}
 }
 

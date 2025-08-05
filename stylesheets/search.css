@@ -1,8 +1,9 @@
 body {
-background-color: #0c1b2a;
-color: white;
-
+	font-family: 'Exo2', sans-serif;
+	background-color: #0c1b2a;
+	color: white;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ aside, main {
 
 main {
 	float: right;
-	width: 77%;
+	width: 76%;
 }
 
 aside{
@@ -35,6 +36,16 @@ main input {
 	margin-left: 10%;
 	display: inline-block;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
  
 .search-icon {
 	cursor: pointer;
@@ -45,6 +56,13 @@ main input {
 #searchRoot {
 	margin-top: 10px;
 	height: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#searchRoot h1 {
+	font-size: 50px;
 }
 
 .cover-container {
@@ -70,12 +88,12 @@ main input {
 }
 
 #cardsContainer {
-	width: 92%;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 15px;
 	overflow-y: auto;
 	scrollbar-width: none;
-	height: 50%;
+	height: 100%;
 }
 
 .card-container {
@@ -113,6 +131,13 @@ aside input[type="checkbox"] {
 	margin-left: 10px;
 }
 
+label {
+	color: #808090;
+}
+aside input[type='checkbox']:checked + label {
+	color: #c0c0ff;
+}
+
 aside input[type="number"] {
 	width: 40%;
 	font-size: 18px;
@@ -122,8 +147,8 @@ aside input[type="number"] {
 	border-radius: 20px;
 	outline: none;
 	border: none;
-	color: #fff;
-	background-color: #042a6f;
+	color: #000;
+	background-color: #f0f0f0;
 }
 
 .price-container {
@@ -139,12 +164,12 @@ aside button {
 	padding: 15px 20px;
 	border-radius: 40px;
 	border: none;
-	background-color: #3d46f2;
+	background-color: #2d36c2;
 	color: #f0f0f0;
 }
 
 aside button:hover{
-	background-color: #049ABF;
+	background-color: #a0a0ff;
 }
 
 

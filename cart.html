@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Shopping Cart</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./stylesheets/fonts.css">
   <link rel="stylesheet" href="./stylesheets/cart.css">
   <link rel='stylesheet' href='stylesheets/nav.css'>
   <script src='./scripts/global_functions.js'></script>
@@ -11,21 +12,22 @@
 <body>
 	<script src='./scripts/handel_redirect.js'></script>
 
-	<nav>
-		<div class="containerFloat-left">
-			<div onclick="window.open('./home.html', '_self')" class="logo-Horizantal">
+
+		<nav>
+			<div class="containerFloat-left">
+				<div onclick="window.open('./home.html', '_self')" class="logo-Horizantal">
+				</div>
+				<input onkeydown="handelInput(event)" id="searchInput" type='text' placeholder="search"  />
+				<i onclick="search()" class="search fa-solid fa-magnifying-glass"></i>
 			</div>
-			<input type='text' placeholder="search"  />
-			<i class="search fa-solid fa-magnifying-glass"></i>
-		</div>
 
-		<div class="containerFloat-right">
-			<i onclick="window.open('./cart.html', '_self')" class="fa-solid fa-cart-shopping"></i>
-			<span id="cart-count">0</span>
+			<div class="containerFloat-right">
+				<i onclick="window.open('./cart.html', '_self')" class="fa-solid fa-cart-shopping"></i>
+				<span id="cart-count">0</span>
 
-			<button onclick='logout()' class="out">logout</button>
-		</div>
-	</nav>
+				<button onclick='logout()' class="out">logout</button>
+			</div>
+		</nav>
 	 
 	
 

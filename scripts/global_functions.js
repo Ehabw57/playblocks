@@ -18,6 +18,12 @@ const CATEGORY_COLORS = {
 };    
 
 
+function handelInput (e) {
+	if(e.key == "Enter") {
+		window.open(`./search.html?q=${e.target.value}`, '_self')
+	}
+}
+
 const allCategories = Object.keys(CATEGORY_COLORS)
 
 const allPlatforms = [
@@ -95,13 +101,7 @@ function createGameCover(game) {
 	cover.className = 'cover-container'
 	cover.style.backgroundImage = `url(${game.cover})`
 
-	const categoryBtns = game.category.map(cat => {
-		const color = CATEGORY_COLORS[cat].color || 'gray';
-		const bgColor = CATEGORY_COLORS[cat].background || 'black';
-		return `<button class="catogory" style="color: ${color}; background-color: ${bgColor};">${cat}</button>`;
-	}).join('');
-
-	cover.innerHTML = `${categoryBtns} <h2>${game.title}</h2>`
+	cover.innerHTML = `<h2>${game.title}</h2>`
 	return cover
 }
 
@@ -129,7 +129,8 @@ function createGameCard(game) {
 
 
 	card.innerHTML = `
-		<div style="background-image: url(${game.image});" class="image-container">
+		<div onclick="window.open('product.html?id=${game.id}', '_self')"
+		style="background-image: url(${game.image}); cursor: pointer;" class="image-container">
 		<div class="rating">${game.rating}</div>
 		</div>
 		${categoryBtns}

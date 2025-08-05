@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Product Page</title>
+  <link rel="stylesheet" href="./stylesheets/fonts.css">
   <link rel="stylesheet" href="./stylesheets/card.css">
   <link rel="stylesheet" href="./stylesheets/nav.css">
   <link rel="stylesheet" href="./stylesheets/product.css">
@@ -18,7 +19,7 @@
 		<div class="containerFloat-left">
 			<div onclick="window.open('./home.html', '_self')" class="logo-Horizantal">
 			</div>
-			<input id="searchInput" type='text' placeholder="search"  />
+			<input onkeydown="handelInput(event)" id="searchInput" type='text' placeholder="search"  />
 			<i onclick="search()" class="search fa-solid fa-magnifying-glass"></i>
 		</div>
 
