@@ -10,8 +10,6 @@ function showError(small, input, show) {
 	input.classList.toggle("not-valid", show);
 }
 
-console.log('imaworking')
-
 function checkUsername() {
 	const value = usernameInput.value.trim();
 	const small = document.getElementById("userNameError");
@@ -72,7 +70,8 @@ function validateAll() {
 	return valid
 }
 
-registerBtn.addEventListener("click", function () {
+function registrationCheck(e) {
+	e.preventDefault()
 	const userName = usernameInput.value.trim();
 	const email = emailInput.value.trim();
 
@@ -88,7 +87,7 @@ registerBtn.addEventListener("click", function () {
 	}
 
 	users.push({
-		username: userName,
+		userName: userName,
 		email: email,
 		password: passwordInput.value,
 		cart: []
@@ -96,5 +95,5 @@ registerBtn.addEventListener("click", function () {
 	localStorage.setItem("users", JSON.stringify(users));
 	alert('user has been registered successfully')
 
-	window.location.href = '../login.html'
-});
+	window.location.href = './login.html'
+};

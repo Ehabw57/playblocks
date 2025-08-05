@@ -64,6 +64,7 @@ const randomPlatform = allPlatforms[Math.floor(Math.random() * allPlatforms.leng
 
 generateSection('platform', randomPlatform, data);
 generateSection('category', randomCategory, data); 
+console.log('from home', data)
 
 const root = document.getElementsByTagName('main')[0];
 const allProducts = document.createElement('a')

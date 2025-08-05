@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./stylesheets/fonts.css" />
 </head>
 <body>
+	<script src="./scripts/global_functions.js"></script>
 	<script src='./scripts/handel_redirect.js'></script>
   <form>
     <h1>REGISTER</h1>
@@ -33,7 +34,7 @@
     </div>
     <small id="termsError">You must agree to this</small>
 
-    <button type="submit" id="register-btn" disabled>Register</button>
+    <button id="register-btn" onclick="registrationCheck(event)" disabled>Register</button>
 	<p>Do you have an account?</p>
 	<a href="./login.html">LOGIN</a>
   </form>

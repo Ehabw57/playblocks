@@ -67,6 +67,8 @@ function renderGameDetails(game) {
 	let relatedGames = data.filter((g) => g.category.includes(game.category[0]))
 	relatedGames = getRandomItems(relatedGames, 3)
 	for(const g of relatedGames) {
+		if (g.id == game.id)
+			continue;
 		relatedProducts.appendChild(createGameCard(g))
 	}
 
