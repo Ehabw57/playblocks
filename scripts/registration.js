@@ -78,7 +78,7 @@ function registrationCheck(e) {
 	const users = JSON.parse(localStorage.getItem("users") || "[]");
 
 	const userExists = users.some(
-		(user) => user.username === userName || user.email === email
+		(user) => user.userName === userName || user.email === email
 	);
 
 	if (userExists) {
