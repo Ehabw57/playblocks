@@ -111,11 +111,11 @@ form {
 }
 
 #login-btn:hover {
-	background-color: #048abf;
+	background-color:  #9c57dc;
 }
 
 #login-btn:disabled {
-  background: #032ca6;
+  background:  #a855f7;
 }
 
 small {

@@ -63,7 +63,7 @@
     "id": 4,
     "title": "Persona 5",
     "image": "assets/Person5.png",
-    "cover": "https://media.rawg.io/media/games/3ea/3ea0e57ede873970c0f1130e30d88749.jpg",
+    "cover": "https://wallpapersok.com/images/hd/persona-5-game-cover-bptow96tmsj68irb.jpg",
     "description": "Inside a casino, during one of their heists, the group known as Phantom Thieves of Hearts is cornered by the police...",
     "category": [
       "RGP",
@@ -104,7 +104,7 @@
     "id": 6,
     "title": "Stardew Valley",
     "image": "assets/StardewValley.png",
-    "cover": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg",
+    "cover": "https://gaming-cdn.com/images/news/articles/5980/cover/stardew-valley-includes-new-mining-and-fishing-features-with-patch-1-6-4-cover662233115665e.jpg",
     "description": "A relaxing farming simulation game with charming characters and endless activities.",
     "category": [
       "Simulation",
@@ -126,7 +126,7 @@
     "id": 7,
     "title": "Cyberpunk 2077",
     "image": "assets/Cyperpunk.jpeg",
-    "cover": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+    "cover": "https://cdna.artstation.com/p/assets/images/images/033/037/886/large/artur-tarnowski-malemain.jpg?1608208334",
     "description": "An open-world sci-fi RPG set in a dystopian future city.",
     "category": [
       "Action",
@@ -148,7 +148,7 @@
     "id": 8,
     "title": "Overwatch 2",
     "image": "assets/OverWatch.png",
-    "cover": "https://media.rawg.io/media/games/95a/95a10817d1fc648cff1153f3fa8ef6c5.jpg",
+    "cover": "https://www.showmetech.com.br/wp-content/uploads//2022/10/Overwatch-2-capa-1920x1024.jpg",
     "description": "A team-based multiplayer shooter with unique heroes and fast-paced gameplay.",
     "category": [
       "Shooter",
@@ -169,7 +169,7 @@
     "id": 9,
     "title": "Resident Evil 4 Remake",
     "image": "assets/ResidentEvil4.png",
-    "cover": "https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg",
+    "cover": "https://www.customcontrollers.com/cdn/shop/articles/5857e042cb1f8e8ed9e61af24b22dec5.png?v=1679659734&width=2048",
     "description": "A modern reimagining of the classic survival horror masterpiece.",
     "category": [
       "Horror",
@@ -211,7 +211,7 @@
     "id": 11,
     "title": "Fall Guys",
     "image": "assets/FallGuys.jpg",
-    "cover": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg",
+    "cover": "https://cdn2.unrealengine.com/fgss04-keyart-offerimagelandscape-2560x1440-2560x1440-89c8edd4ffe307f5d760f286a28c3404-2560x1440-e9d811eebce7.jpg",
     "description": "Multiplayer party game where players compete in obstacle courses until one remains.",
     "category": [
       "Party",
@@ -232,7 +232,7 @@
     "id": 12,
     "title": "FIFA 20",
     "image": "assets/Fifa20.jpg",
-    "cover": "https://media.rawg.io/media/games/031/031af38e6a558d4cd4bf91ee80904cdf.jpg",
+    "cover": "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2019/08/09/285dc5ad-b2b8-4add-a8f6-31e2dbe6fea7/fifa-20",
     "description": "Realistic football simulation with updated teams and leagues.",
     "category": [
       "Sports",
@@ -252,7 +252,7 @@
     "id": 13,
     "title": "Call of Duty: Warzone",
     "image": "assets/CallOfDuty.jpg",
-    "cover": "https://media.rawg.io/media/games/7e3/7e327a055bedb9b6d1be86593bef473d.jpg",
+    "cover": "https://arabhardware.net/wp-content/uploads/2020/03/87795709_239717043856190_6515415063900192768_n.jpg",
     "description": "Free-to-play battle royale experience in the Call of Duty universe.",
     "category": [
       "Shooter",
@@ -272,7 +272,7 @@
     "id": 14,
     "title": "Minecraft",
     "image": "assets/Minecraft.jpg",
-    "cover": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
+    "cover": "https://gaming-cdn.com/images/news/articles/7191/cover/minecraft-gets-a-new-artwork-cover66856ea7d02ad.jpg",
     "description": "Open-world sandbox game focused on building and survival.",
     "category": [
       "Survival",
@@ -294,7 +294,7 @@
     "id": 15,
     "title": "Among Us",
     "image": "assets/AmongUs.jpg",
-    "cover": "https://media.rawg.io/media/games/e74/e74458058b35e01c1ae3feeb39a3f724.jpg",
+    "cover": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/09/Among-Us-Cover-Art.jpg",
     "description": "Social deduction game where crewmates try to identify impostors.",
     "category": [
       "Party",
@@ -314,7 +314,7 @@
     "title": "Apex Legends",
     "image": "assets/ApexLegends.jpg",
     "description": "Hero-based battle royale shooter with unique abilities.",
-    "cover": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg",
+    "cover": "https://images8.alphacoders.com/992/thumb-1920-992724.png",
     "category": [
       "Shooter",
       "Adventure"
@@ -355,7 +355,7 @@
     "id": 18,
     "title": "Cuphead",
     "image": "assets/CupHead.jpg",
-    "cover": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg",
+    "cover": "https://www.hd.com.do/wp-content/uploads/2017/11/cuphead.jpg",
     "description": "A classic run and gun action game heavily focused on boss battles, with a hand-drawn 1930s cartoon style.",
     "category": [
       "Action",
@@ -376,7 +376,7 @@
     "id": 19,
     "title": "It Takes Two",
     "image": "assets/ItTakesTwo.jpg",
-    "cover": "https://media.rawg.io/media/games/d47/d479582ed0a46496ad34f65c7099d7e5.jpg",
+    "cover": "https://magazine.artstation.com/wp-content/uploads/2021/04/ITT_Artstation_Header.jpg?w=1200&h=675&crop=1",
     "description": "A cooperative action-adventure game where two players must work together to mend a broken relationship.",
     "category": [
       "Co-op",
@@ -397,7 +397,7 @@
     "id": 20,
     "title": "Ghostrunner",
     "image": "assets/GhostRunner.jpg",
-    "cover": "https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg",
+    "cover": "https://cdnb.artstation.com/p/assets/images/images/036/014/679/large/marek-okon-mo-ghost-runner-web-01.jpg?1616510617",
     "description": "A fast-paced first-person slasher set in a dystopian cyberpunk world with one-hit kills and parkour mechanics.",
     "category": [
       "Action",
@@ -457,7 +457,7 @@
     "id": 23,
     "title": "Portal 2",
     "image": "assets/Portal2.jpg",
-    "cover": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg",
+    "cover": "https://www.wallpaperflare.com/static/20/532/26/video-games-portal-2-chell-p-body-wallpaper.jpg",
     "description": "Solve mind-bending physics puzzles in a hilarious and thrilling story-driven first-person puzzle game.",
     "category": [
       "Puzzle",
@@ -478,7 +478,7 @@
     "id": 24,
     "title": "Super Mario Odyssey",
     "image": "assets/SuperMarioOdyssey.jpg",
-    "cover": "https://media.rawg.io/media/games/267/267bd0dbc496f52692487d07d014c061.jpg",
+    "cover": "https://bloximages.newyork1.vip.townnews.com/ocolly.com/content/tncms/assets/v3/editorial/c/81/c811da44-c7fb-11e7-855a-07ff8450396b/5a08d0d88e558.image.png?resize=1396%2C785",
     "description": "Join Mario on a globe-trotting 3D platform adventure with his new companion, Cappy.",
     "category": [
       "Adventure",
@@ -534,7 +534,7 @@
     "id": 27,
     "title": "The Last of Us",
     "image": "assets/TheLastOfUs.jpg",
-    "cover": "https://media.rawg.io/media/games/a5a/a5a7fb8d9cb8063a8b42ee002b410db6.jpg",
+    "cover": "https://www.hollywoodreporter.com/wp-content/uploads/2014/03/the_last_of_us.jpg",
     "description": "A post-apocalyptic action-adventure game centered on the bond between Joel and Ellie as they fight to survive.",
     "category": [
       "Action",
@@ -553,7 +553,7 @@
     "id": 28,
     "title": "Mass Effect 2",
     "image": "assets/MassEffect2.jpg",
-    "cover": "https://media.rawg.io/media/games/3cf/3cff89996570cf29a10eb9cd967dcf73.jpg",
+    "cover": "https://i.ytimg.com/vi/6QdTmZU7WXA/maxresdefault.jpg",
     "description": "A sci-fi RPG where you play Commander Shepard in a galaxy-spanning war against a powerful ancient race.",
     "category": [
       "Sci-Fi",
@@ -593,7 +593,7 @@
     "id": 30,
     "title": "Control",
     "image": "assets/Control.jpg",
-    "cover": "https://media.rawg.io/media/games/253/2534a46f3da7fa7c315f1387515ca393.jpg",
+    "cover": "https://d1lss44hh2trtw.cloudfront.net/assets/article/2020/11/06/control-delay_feature.jpg",
     "description": "A supernatural third-person shooter where you explore a shifting government building filled with mystery.",
     "category": [
       "Action",
@@ -647,7 +647,7 @@
     "id": 33,
     "title": "PUBG: BATTLEGROUNDS",
     "image": "assets/Pubg.jpg",
-    "cover": "https://media.rawg.io/media/games/1bd/1bd2657b81eb0c99338120ad444b24ff.jpg",
+    "cover": "https://ukstories.microsoft.com/wp-content/uploads/2018/02/PUBG-Key-Art.jpg",
     "description": "Get into the action in one of the longest running battle royale games PUBG Battlegrounds.",
     "platform": [
       "PC",
@@ -664,7 +664,7 @@
     "id": 34,
     "title": "Enlisted",
     "image": "assets/Enlisted.jpg",
-    "cover": "https://media.rawg.io/media/games/9da/9dad0e1b6406a4685f244c58854a0ea2.jpg",
+    "cover": "https://mygameplus.com/wp-content/uploads/2022/05/download-enlisted-for-windows-1280x720.jpg",
     "description": "Get ready to command your own World War II military squad in Gaijin and Darkflow Software’s MMO squad-based shooter Enlisted. ",
     "platform": [
       "PC",
@@ -681,7 +681,7 @@
     "id": 35,
     "title": "Sky: Children of the Light",
     "image": "assets/Sky.webp",
-    "cover": "https://media.rawg.io/media/games/cb1/cb14d42b58bdb6cf5948d0eed778c2f0.jpg",
+    "cover": "https://gaming-cdn.com/images/products/6246/orig/sky-children-of-the-light-pc-game-steam-cover.jpg?v=1713339838",
     "description": "A cozy free-to-play MMORPG from thatgamecompany.",
     "platform": [
       "PC",
@@ -732,7 +732,7 @@
     "id": 38,
     "title": "Stormgate",
     "image": "assets/Stormgate.webp",
-    "cover": "https://media.rawg.io/media/games/4d3/4d37e250f89323a59bd83243ca271305.jpg",
+    "cover": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/frost-giant-studios-stormgate-rts-key-art.jpg",
     "description": "A free-to-play science fantasy real-time strategy game in which humans and robots defend Earth from alien forces.",
     "platform": [
       "PC",
@@ -766,7 +766,7 @@
     "id": 40,
     "title": "Vigor",
     "image": "assets/Vigor.jpg",
-    "cover": "https://media.rawg.io/media/games/bbe/bbec05fb0c57c24c92dbe09699d4968d.jpg",
+    "cover": "https://static1.srcdn.com/wordpress/wp-content/uploads/2019/08/Vigor-cover-art.jpg",
     "description": "A free-to-play looter shooter from the developers of Operation Flashpoint and the Arma series.",
     "platform": [
       "PC",
@@ -836,7 +836,7 @@
     "id": 44,
     "title": "War Robots: Frontiers",
     "image": "assets/WarRobotsFrontiers.webp",
-    "cover": "https://media.rawg.io/media/games/2f9/2f97639927991fd06fc16ceae74b3495.jpg",
+    "cover": "https://cdnb.artstation.com/p/assets/images/images/060/306/965/large/alexander-vigura-action-key-art-4k.jpg?1678279680",
     "description": "A multiplayer mech game set in a planetary system light years from Earth.",
     "platform": [
       "PC",
@@ -870,7 +870,7 @@
     "id": 46,
     "title": "Diablo Immortal",
     "image": "assets/DiabloImmortal.jpg",
-    "cover": "https://media.rawg.io/media/games/7fd/7fd73ef44936f8eec7732cfc299dff09.jpg",
+    "cover": "https://gaming-cdn.com/images/products/10950/orig/diablo-immortal-pc-spel-battle-net-cover.jpg?v=1701338437",
     "description": "Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.",
     "platform": [
       "PC",
@@ -886,7 +886,7 @@
     "id": 47,
     "title": "RuneScape",
     "image": "assets/RuneScape.webp",
-    "cover": "https://media.rawg.io/media/games/007/0073b6418763a47eb023fba88cb22e7c.jpg",
+    "cover": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/08/Old-School-RuneScape-Fresh-Start-Worlds.jpg",
     "description": "A popular 3D browser MMORPG boasting a huge player base and 15 years of content.",
     "platform": [
       "PC",
@@ -901,9 +901,9 @@
   },
   {
     "id": 48,
-    "title": "Phantasy Star Online 2",
+    "title": "Phantasy Star Online 2: New Genesis",
     "image": "assets/PhantasyStar.jpg",
-    "cover": "https://media.rawg.io/media/games/b39/b39b6aa7295720440cdeef058d8c39d3.jpg",
+    "cover": "https://cdn2.unrealengine.com/key-art-1920x1080-no-logo-1920x1080-635cc614ea18.jpg",
     "description": "The legacy of Phantasy Star Online 2 continues a thousand years later!",
     "platform": [
       "PC",
@@ -920,7 +920,7 @@
     "id": 49,
     "title": "Warframe",
     "image": "assets/Warframe.webp",
-    "cover": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
+    "cover": "https://img.goodfon.com/original/1920x1080/2/3f/warframe-art-igra-inoplanetiane-sushchestva-oruzhie-personaz.jpg",
     "description": "A cooperative free-to-play third person online action shooter set in an stunning sci-fi world. ",
     "platform": [
       "PC",
@@ -937,7 +937,7 @@
     "id": 50,
     "title": "Crossout",
     "image": "assets/Crossout.webp",
-    "cover": "https://media.rawg.io/media/games/7a6/7a6f90e85a2e264c3b440bb4787cf378.jpg",
+    "cover": "https://miro.medium.com/v2/resize:fit:2000/1*2P9H5sicbCN-m7BOkdrjQw.jpeg",
     "description": "A post-apocalyptic MMO vehicle combat game! ",
     "platform": [
       "PC",
@@ -954,7 +954,7 @@
     "id": 51,
     "title": "Brawlhalla",
     "image": "assets/Brawlhalla.jpg",
-    "cover": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg",
+    "cover": "https://images.ctfassets.net/pc3i4f5nnp8d/7FukNWz1Dksq5OafQq7sMy/39c7f2ef8895e60e364e200ecf618ac8/biborg-work-ubisoft-brawlhalla-header.jpg",
     "description": "A free-to-play 2D platform fighter inspired by the Smash Bros.",
     "platform": [
       "PC",
@@ -989,7 +989,7 @@
     "id": 53,
     "title": "World of Tanks",
     "image": "assets/WorldofTanks.jpeg",
-    "cover": "https://media.rawg.io/media/games/c3b/c3be1d5f55cb9324c97ccb7aaaf42ad4.jpg",
+    "cover": "https://wxpcdn-cbprodretail.gcdn.co/dcont/images/Gods_of_Thunder_Key_Art.original.png",
     "description": "If you like blowing up tanks, with a quick and intense game style you will love this game!",
     "platform": [
       "PC",
@@ -1041,7 +1041,7 @@
     "id": 56,
     "title": "Valorant",
     "image": "assets/Valorant.png",
-    "cover": "https://media.rawg.io/media/games/b11/b11127b9ee3c3701bd15b9af3286d20e.jpg",
+    "cover": "https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg",
     "description": "Test your mettle in Riot Games’ character-based FPS shooter Valorant.",
     "platform": [
       "PC",
@@ -1094,7 +1094,7 @@
     "id": 60,
     "title": "Halo Infinite",
     "image": "assets/HaloInfinite.webp",
-    "cover": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg",
+    "cover": "https://cdn.mos.cms.futurecdn.net/aHwkeLgSdV5Bhq696bjdKk-1200-80.jpg",
     "description": "For the first time ever, a free-to-play Halo experience is available in the form of Halo Infinite’s multiplayer.",
     "platform": [
       "PC",

@@ -26,7 +26,7 @@ function loginCheck() {
 
   if (user) {
     if (user.password === password.value) {
-		if (!user.cart) user.cart = []; //
+		if (!user.cart) user.cart = []; 
     sessionStorage.setItem('currentUser', JSON.stringify(user));
 		window.open('../home.html', '_self');
      location.reload();
