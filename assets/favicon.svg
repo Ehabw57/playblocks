@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B"/>
+      <stop offset="50%" stop-color="#C850C0"/>
+      <stop offset="100%" stop-color="#4158D0"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFAF7B"/>
+      <stop offset="100%" stop-color="#D76D77"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0D0D1A"/>
+  
+  <!-- Glowing border -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#neonGrad)" stroke-width="2" filter="url(#glow)"/>
+  
+  <!-- Stacked blocks forming abstract "P" / play shape -->
+  <g filter="url(#glow)">
+    <!-- Top block -->
+    <rect x="16" y="12" width="14" height="14" rx="3" fill="url(#neonGrad)" transform="rotate(-5 23 19)"/>
+    <!-- Middle block -->
+    <rect x="28" y="24" width="18" height="18" rx="4" fill="url(#glowGrad)" transform="rotate(8 37 33)"/>
+    <!-- Bottom block -->
+    <rect x="14" y="36" width="16" height="16" rx="3" fill="#4158D0"/>
+  </g>
+  
+  <!-- Play triangle accent -->
+  <path d="M 38 44 L 38 54 L 50 49 Z" fill="#FFAF7B" opacity="0.9"/>
+</svg>

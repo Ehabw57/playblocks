@@ -1,13 +1,14 @@
+@import 'variables.css';
+
 *{
     margin: 0;
     padding: 0;
 }
 
-
 nav{
     height: 55px;
-    background-color: #010500;
-	color: white;
+    background-color: var(--color-bg-darker);
+	color: var(--color-text-primary);
 	position: fixed;
 	width:100%;
 	z-index: 1;
@@ -20,10 +21,11 @@ nav{
  
 .logo-Horizantal{
 	height: 50px;
-	width: 100px;
+	width: 190px;
+    margin-left: 10px;
     display: inline;
     float: left;
-	background-image: url(../assets/logo_vert.png);
+	background-image: url(../playblock-logo.svg);
 	background-position: center;
 	background-size: cover;
 }
@@ -34,26 +36,27 @@ nav input{
     margin-top: 17px;
     width: 367px;
     height: 20px;
-    background-color: rgb(177, 179, 178);
-    border-radius: 20px;
+    background-color: var(--color-input-bg);
+    border-radius: var(--radius-full);
     margin-left: 30px;
-    padding-left: 26px   ;
+    padding-left: 26px;
 	padding-block: 3px;
-    color: rgb(23, 24, 24);
+    color: var(--color-input-text);
 }
 
 input:focus{
-	outline: 1px solid #5d76f2;
+	outline: 1px solid var(--color-primary-dark);
 }
 
 input::placeholder{
-    color: rgb(59, 60, 61);
+    color: var(--color-input-placeholder);
     font-size: 1rem;
 }
 
 .search{
     cursor: pointer;
 	margin-left: 10px;
+    color: var(--color-text-primary);
 }
 
 .containerFloat-right{
@@ -66,17 +69,18 @@ i {
 	font-size: 25px;
 	vertical-align: middle;
     cursor: pointer;
+    color: var(--color-text-primary);
 }
 
 #cart-count {
   position: absolute;
   top: 3px;
   right: 170px;
-  background: #048abf;
-  color: white;
+  background: var(--color-accent-info);
+  color: var(--color-text-primary);
   font-size: 14px;
   font-weight: bold;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   width: 17px;
   height: 17px;
   padding: 2px;
@@ -86,17 +90,16 @@ i {
 .out{
     width: 100px;
     height: 28px;
-    background-color: red;
-    color: white;
+    background-color: var(--color-accent-danger);
+    color: var(--color-text-primary);
     border-radius: 10px;
     border: 0;
     float: right;
     margin-inline: 40px;
     cursor: pointer;
+    transition: var(--transition-slow);
 }
 
 .out:hover{
-background-color: rgb(68, 214, 129);
-transition: .5s;
-
+    background-color: var(--color-accent-success);
 }

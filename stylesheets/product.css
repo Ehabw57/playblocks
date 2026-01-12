@@ -1,6 +1,8 @@
+@import 'variables.css';
+
 body {
-  background-color: #011526;
-  color: white;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
   font-family: 'Exo2', sans-serif;
   margin: 0;
   padding: 0;
@@ -24,8 +26,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-
-
 .tags {
   margin-bottom: 10px;
   font-size: 20px;
@@ -36,6 +36,7 @@ h1 {
 	display: flex;
 	font-size: 30px;
 	gap: 15px;
+	flex-wrap: wrap;
 }
 
 .catogory {
@@ -43,14 +44,13 @@ h1 {
 	border-radius: 5px;
 }
 
-
 .tag {
   display: inline-block;
   padding: 5px 12px;
   margin-right: 10px;
   border-radius: 5px;
   font-size: 0.9rem;
-  color: white;
+  color: var(--color-text-primary);
 }
 
 .tag.action { background-color: #e74c3c; }
@@ -65,7 +65,7 @@ h1 {
 .description {
   line-height: 1.6;
   margin: 25px 0;
-  color: #ccc;
+  color: var(--color-text-secondary);
   font-size: 1rem;
 }
 
@@ -74,23 +74,30 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #price {
 	font-size: 30px;
-  font-weight: bold;
-  color: white;
+    font-weight: bold;
+    color: var(--color-text-primary);
 }
 
 .btn {
   background: linear-gradient(45deg, #a855f7, #ec4899);
-  color: white;
+  color: var(--color-text-primary);
   padding: 12px 30px;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
+  transition: transform var(--transition-default);
+}
+
+.btn:hover:not(:disabled) {
+  transform: scale(1.05);
 }
 
 .btn:disabled {
@@ -111,12 +118,17 @@ h1 {
 }
 
 .card {
-  background-color: #111;
+  background-color: var(--color-bg-card);
   border-radius: 8px;
   overflow: hidden;
   width: 300px;
-  color: white;
-  box-shadow: 0 0 10px #000;
+  color: var(--color-text-primary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform var(--transition-default);
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -147,6 +159,11 @@ h1 {
   border-radius: 4px;
   margin-top: 8px;
   cursor: pointer;
+  transition: background-color var(--transition-default);
+}
+
+.card .add-to-cart:hover {
+  background-color: #27ae60;
 }
 
 .card .price {
@@ -155,9 +172,9 @@ h1 {
   margin-top: 10px;
   font-weight: bold;
 }
+
 .stars {
 	color: lightgreen;
 	font-size: 23px;
 	margin-top: 15px;
 }
-

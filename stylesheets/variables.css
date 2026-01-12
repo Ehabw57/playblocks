@@ -1,0 +1,72 @@
+/* Global Color Variables */
+:root {
+	/* Primary Colors */
+	--color-primary: #64baff;
+	--color-primary-light: #79CFFF;
+	--color-primary-dark: #3d46f2;
+	
+	/* Background Colors */
+	--color-bg-dark: #011526;
+	--color-bg-darker: #010500;
+	--color-bg-card: #2f2f50;
+	--color-bg-input: #011526;
+	--color-bg-footer: #010510;
+	--color-bg-purple: #7f5af0;
+	--color-bg-purple-dark: #16052a;
+	--color-bg-page: #0b001a;
+	
+	/* Text Colors */
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #ccc;
+	--color-text-tertiary: #aaa;
+	--color-text-muted: #999;
+	--color-text-dark: #17181818;
+	
+	/* Accent Colors */
+	--color-accent-success: #45a049;
+	--color-accent-danger: #ff0000;
+	--color-accent-warning: #ff6b00;
+	--color-accent-info: #048abf;
+	
+	/* Border Colors */
+	--color-border-input: #a855f7;
+	--color-border-purple: #7f5af0;
+	--color-border-dark: #333;
+	
+	/* Social Colors */
+	--color-social-facebook: #1877F2;
+	--color-social-github: #ffffff;
+	--color-social-discord: #5865F2;
+	
+	/* Shadow Colors */
+	--color-shadow-dark: rgba(0, 0, 0, 0.3);
+	--color-shadow-purple: rgba(127, 90, 240, 0.5);
+	--color-shadow-purple-aa: #7f5af0aa;
+	
+	/* Input Styling */
+	--color-input-bg: rgb(177, 179, 178);
+	--color-input-text: rgb(23, 24, 24);
+	--color-input-placeholder: rgb(59, 60, 61);
+	
+	/* Spacing */
+	--spacing-xs: 5px;
+	--spacing-sm: 10px;
+	--spacing-md: 15px;
+	--spacing-lg: 20px;
+	--spacing-xl: 30px;
+	--spacing-2xl: 40px;
+	--spacing-3xl: 50px;
+	--spacing-4xl: 60px;
+	
+	/* Border Radius */
+	--radius-sm: 8px;
+	--radius-md: 10px;
+	--radius-lg: 12px;
+	--radius-full: 20px;
+	--radius-circle: 50%;
+	
+	/* Transitions */
+	--transition-default: 0.3s ease;
+	--transition-fast: 0.15s ease;
+	--transition-slow: 0.5s ease;
+}

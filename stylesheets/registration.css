@@ -1,17 +1,20 @@
+@import 'variables.css';
+
 body {
-	background-color: #011526;
+	background-color: var(--color-bg-dark);
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-height: 100vh;
 }
 
 form {
-	background-color: #011526;
+	background-color: var(--color-bg-dark);
 	border: 1px solid royalblue;
-	color: white;
+	color: var(--color-text-primary);
 	padding: 35px 60px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -29,6 +32,7 @@ h3 {
 label {
 	display: block;
 	margin-bottom: 5px;
+	color: var(--color-text-primary);
 }
 
 label[for=agree] {
@@ -36,20 +40,20 @@ label[for=agree] {
 }
 
 .input {
-	background-color: #011526;
+	background-color: var(--color-bg-input);
 	width: 100%;
 	padding: 13px 15px;
-	border: 0.2px solid #a855f7;
+	border: 0.2px solid var(--color-border-input);
 	border-radius: 10px;
-	color: white;
+	color: var(--color-text-primary);
 	font-size: 18px;
 	outline: none;
-	transition: border-color 0.3s;
+	transition: border-color var(--transition-default);
 	box-sizing: border-box;
 }
 
 .input:focus {
-	border-color: #a855f7;
+	border-color: var(--color-border-input);
 	outline: none;
 	box-shadow: 0 0 8px #a259e6;
 }
@@ -62,14 +66,14 @@ label[for=agree] {
 #register-btn {
 	width: 100%;
 	background: #0d46f2;
-	color: white;
+	color: var(--color-text-primary);
 	font-size: 16px;
 	font-weight: bold;
 	padding: 15px;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: background-color var(--transition-default);
 	box-sizing: border-box;
 }
 
@@ -96,11 +100,17 @@ p{
 a{ 
 	font-weight: 700;
 	font-size: 20px;
-	color: #a855f7;
+	color: var(--color-border-input);
 	text-decoration: none;
+	transition: color var(--transition-default);
 }
+
+a:hover {
+	color: #c1a5db;
+}
+
 a.terms {
-	color: white;
+	color: var(--color-text-primary);
 	display: inline-block;
 	font-weight: bolder;
 	font-size: 17px;
@@ -111,7 +121,7 @@ small{
 	color: orange;
 	font-size: 14px;
 	margin-block: 5px 15px;
-	transition: all 0.3s;
+	transition: opacity var(--transition-default);
 	opacity: 0;
 }
 
@@ -122,4 +132,3 @@ small{
 .not-valid {
 	border: 1px solid red;
 }
-

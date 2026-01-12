@@ -1,10 +1,12 @@
+@import 'variables.css';
+
 body {
 	font-family: "Exo2", serif;
 	font-weight: 700;
 }
 
 .hero {
-	height: 100vh;
+	min-height: 100vh;
 	background-position: top;
 }
 
@@ -12,19 +14,18 @@ body {
 	font-weight: 300;
 }
 
-
 #currentUser {
-	color: #64baff;
+	color: var(--color-primary);
 	font-weight: 300;
 }
 
 #text{
-  font-size: 2rem;
+    font-size: 2rem;
+    line-height: 1.6;
 }
 
-
 main {
-	background-color: #011526;
+	background-color: var(--color-bg-dark);
 	padding-bottom: 30px;
 } 
 
@@ -36,8 +37,8 @@ main {
 	position: relative;
 	margin-inline: 0.5%;
 	overflow: hidden;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-	transition: transform 0.3s ease;
+	box-shadow: 0 4px 10px var(--color-shadow-dark);
+	transition: transform var(--transition-default);
 	cursor: pointer;
 }
 
@@ -45,7 +46,7 @@ main {
 	font-weight: 600;
 	position: relative;
 	text-shadow: 0px 0 19px gray;
-	color: #fff;
+	color: var(--color-text-primary);
 	top: 70%;
 	left: 20px;
 	font-size: 40px;
@@ -58,9 +59,15 @@ main {
 
 main a {
 	font-size: 20px;
-	color: #3d46f2;
+	color: var(--color-primary-dark);
 	display: block;
 	text-align: center;
 	width: 100%;
 	margin-top: 60px;
+	text-decoration: none;
+	transition: color var(--transition-default);
+}
+
+main a:hover {
+	color: var(--color-primary);
 }

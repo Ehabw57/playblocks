@@ -1,6 +1,8 @@
+@import 'variables.css';
+
 body {
-  background-color: #011526;
-  color: white;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
@@ -19,7 +21,7 @@ h1 {
 h3 {
   font-size: 14px;
   font-weight: normal;
-  color: #aaa;
+  color: var(--color-text-tertiary);
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -38,25 +40,25 @@ form {
 .input-container input {
   width: 100%;
   padding: 15px 50px 15px 70px;
-  background-color: #011526;
-  border: 0.2px solid #a855f7;
-  border-radius: 10px;
-  color: white;
+  background-color: var(--color-bg-input);
+  border: 0.2px solid var(--color-border-input);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
   font-size: 16px;
   outline: none;
-  transition: border-color 0.3s;
+  transition: border-color var(--transition-default);
   box-sizing: border-box;
 }
 
 .input-container input::placeholder {
-  color: #ccc;
+  color: var(--color-text-secondary);
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .input-container input:focus {
-  border-color: #a855f7;
+  border-color: var(--color-border-input);
   outline: none;
   box-shadow: 0 0 8px #a259e6;
 }
@@ -67,10 +69,10 @@ form {
   top: 50%;
   left: 1px;
   transform: translateY(-50%);
-  color: #a855f7;
+  color: var(--color-border-input);
   font-size: 18px;
   padding: 15px;
-  border-right: 1px solid #a855f7;
+  border-right: 1px solid var(--color-border-input);
 }
 
 .input-container i#togglePassword {
@@ -78,18 +80,20 @@ form {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #a855f7;
+  color: var(--color-border-input);
   font-size: 18px;
   cursor: pointer;
+  transition: color var(--transition-default);
 }
 
 #forget {
   text-align: right;
   display: block;
   margin-bottom: 2px;
-  color: #a855f7;
+  color: var(--color-border-input);
   font-size: 14px;
   text-decoration: none;
+  transition: color var(--transition-default);
 }
 
 #forget:hover {
@@ -99,39 +103,40 @@ form {
 #login-btn {
   width: 100%;
   background: #0d46f2;
-  color: white;
+  color: var(--color-text-primary);
   font-size: 16px;
   font-weight: bold;
   padding: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color var(--transition-default);
   box-sizing: border-box;
 }
 
 #login-btn:hover {
-	background-color:  #9c57dc;
+	background-color: #9c57dc;
 }
 
 #login-btn:disabled {
-  background:  #a855f7;
+  background: var(--color-border-input);
 }
 
 small {
-  color: #aaa;
+  color: var(--color-text-tertiary);
   font-size: 14px;
 }
 
 a#register {
-  color: #a855f7;
+  color: var(--color-border-input);
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
   font-weight: bold;
   letter-spacing: 0.5px;
+  transition: color var(--transition-default);
 }
 
 a#register:hover {
-  color: #aaa;
+  color: var(--color-text-tertiary);
 }

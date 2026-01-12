@@ -1,11 +1,11 @@
 const title = document.title;
 
-if (title == 'Login' || title == 'Register'){
+if (title == 'Playblocks — Login' || title == 'Playblocks — Register') {
 	if(getCurrentUser()) {
-		window.location.href = '../home.html'
+		window.location.href = '/index.html'
 	}
 } else {
 	if(!getCurrentUser()) {
-		window.location.href = '../login.html'
+		window.location.href = '/login.html'
 	}
 }

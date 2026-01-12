@@ -25,10 +25,10 @@ function loginCheck() {
   const user = users ? users.find(user => user.userName === username.value) : ''
 
   if (user) {
-    if (user.password === password.value) {
-		if (!user.cart) user.cart = []; 
+			if (user.password === password.value) {
+				if (!user.cart) user.cart = []; 
     sessionStorage.setItem('currentUser', JSON.stringify(user));
-		window.open('../home.html', '_self');
+				window.open('../index.html', '_self');
      location.reload();
     } else {
       alert("Sorry, wrong password");

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shopping Cart</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="./stylesheets/fonts.css">
-  <link rel="stylesheet" href="./stylesheets/cart.css">
-  <link rel='stylesheet' href='stylesheets/nav.css'>
-  <script src='./scripts/global_functions.js'></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Playblocks — Cart</title>
+	<meta name="description" content="Your shopping cart — review items and proceed to checkout">
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+	<meta property="og:title" content="Playblocks — Cart">
+	<meta property="og:description" content="Review items in your cart and checkout.">
+	<meta property="og:image" content="assets/playblock-logo.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="./stylesheets/fonts.css">
+	<link rel="stylesheet" href="./stylesheets/cart.css">
+	<link rel='stylesheet' href='stylesheets/nav.css'>
+	<script src='./scripts/global_functions.js'></script>
 </head>
 <body>
 	<script src='./scripts/handel_redirect.js'></script>
@@ -15,7 +21,7 @@
 
 		<nav>
 			<div class="containerFloat-left">
-				<div onclick="window.open('./home.html', '_self')" class="logo-Horizantal">
+				<div onclick="window.open('./index.html', '_self')" class="logo-Horizantal">
 				</div>
 				<input onkeydown="handelInput(event)" id="searchInput" type='text' placeholder="search"  />
 				<i onclick="search()" class="search fa-solid fa-magnifying-glass"></i>
@@ -62,7 +68,7 @@
 	</div>
 	
 <div class="back">
-		<a href="home.html"><i class="fa-solid fa-arrow-left"></i> Back to shopping</a>
+		<a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to shopping</a>
 	</div>
 	<script src='./scripts/cart.js'></script>
 
